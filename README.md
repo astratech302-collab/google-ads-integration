@@ -70,11 +70,174 @@ or other-principal connections, 502 means Google rejected a read, and 503 means
 transient/quota retries were exhausted. No partial report is persisted on collection
 failure. Request bodies and raw Google errors are not logged or echoed on failures.
 
-For a live connect flow, your service calls `/oauth/start` with its integration key,
-sends the authorization URL to the customer, and associates the callback's connection
-ID with its user. The backend callback returns JSON; an existing frontend can provide
-the completion screen. State is single use, expires after ten minutes, and is bound to
-the initiating integration principal; PKCE protects the code exchange.
+### Where this fits in an external service
+
+For example, a marketing SaaS or agency portal can use this backend to show a customer
+which ads point at each landing page. Your application owns customer login, tenant
+permissions, the account picker, and the report UI. This backend owns Google consent,
+encrypted Google credentials, account discovery, and report collection/mapping.
+
+```text
+Customer browser  <-->  Your application backend  <-->  This mapper API  <-->  Google Ads
+       |                  customer/tenant checks         X-API-Key
+       +--> Google consent --> registered OAuth callback
+```
+
+Host one mapper deployment for your service; you do not need a deployment per
+customer. Configure `ADS_API_KEYS`, for example:
+
+```dotenv
+ADS_API_KEYS={"customer-acme":"replace-with-acme-secret-at-least-32-characters","customer-beta":"replace-with-beta-secret-at-least-32-characters"}
+```
+
+Generate actual secrets using the command in [Google OAuth and production access](#google-oauth-and-production-access).
+These principals are configured by the operator; there is no tenant/key provisioning
+API. Adding a principal requires updating the configuration and restarting the mapper.
+Keep principal names stable: stored connections belong to that name, so rotating its
+secret under the same name preserves ownership.
+
+Alternatively, your backend can use one service principal for all customers. In that
+case the mapper key can access every connection it created, so your backend must check
+the logged-in user's tenant against its own connection records on **every** request.
+Never accept an arbitrary connection ID from a browser as proof of ownership, even
+with separate tenant keys.
+
+Store a mapping in your application's database such as:
+
+| Your application field | Purpose |
+|---|---|
+| `tenant_id` / customer ID | Which customer owns this integration |
+| `mapper_principal` | Which server-side key to use |
+| `connection_id` | Opaque ID returned after connection |
+| Selected Google Ads customer IDs | Account choices shown in your UI; the mapper enforces its saved selection |
+| `report_id` and account ID | Retrieve a previously generated report |
+
+Google Ads `customer_id` is a ten-digit advertising account ID, without hyphens;
+it is separate from your application's customer or tenant ID. Google refresh tokens
+stay in the mapper, not in your application's customer records.
+
+### Customer journey in your product
+
+1. **Connect Google Ads.** After authenticating the customer in your application,
+   your backend calls `POST /oauth/start` with the appropriate mapper key. Send the
+   returned `authorization_url` to the browser and open it. The customer signs into
+   Google and grants consent; they do not need to create their own OAuth client or
+   provide your application with Google credentials. Your service operator completes
+   the Google project setup described below.
+2. **Complete the connection.** Google redirects to `ADS_REDIRECT_URI`. The mapper
+   exchanges the code and returns `{"connection_id":"...","connected":true}`.
+   Save the connection against the authenticated customer using the callback handoff
+   described below.
+3. **Choose accounts to share.** Your backend calls `GET /connections/{id}/accounts`
+   and your UI shows the accessible accounts. The customer chooses eligible
+   non-manager accounts, then your backend sends their IDs in
+   `PUT /connections/{id}/accounts`. Discovery must happen before selection. The
+   selection controls what your service may report on; it does not change Google's
+   OAuth grant or the user's Google Ads role.
+4. **Generate a landing-page report.** Your backend calls
+   `POST /connections/{id}/reports` for one selected account at a time. Show a loading
+   state while the synchronous request completes. Save `report_id` and use the
+   returned `report` to render groups of landing pages and their ad configurations.
+   Include `unmapped_ads` and `data_gaps` so missing destinations or fields remain
+   visible. This is a configuration report; it does not include spend, clicks,
+   conversions, performance history, or website content analysis.
+5. **View or export.** Retrieve saved reports as JSON, CSV, or HTML through your
+   backend. The HTML endpoint returns a basic standalone table, with framing disabled;
+   build your dashboard from JSON or serve an authorized download. A direct browser
+   link to the mapper cannot supply `X-API-Key`. Fetch exports through your backend.
+6. **Refresh or disconnect.** A saved report is a snapshot; run another POST to
+   refresh it. There is no built-in schedule, report-list endpoint, webhook, or job
+   polling API. On disconnect, call `DELETE /connections/{id}`, clear your app's
+   mapping, and show whether Google revocation was confirmed. This deletes local
+   credentials and reports. Copies exported to your service need your own retention
+   and deletion handling. On expired Google authorization, offer the connect flow
+   again and save the new connection ID.
+
+### OAuth callback handoff for a customer-facing app
+
+The current callback returns JSON in the browser. It does **not** redirect to your
+application, send a webhook, or bind a connection to your application's user session.
+`POST /oauth/start` takes no custom state or return URL. State is single use, expires
+after ten minutes, and is bound to the initiating integration principal; PKCE protects
+the code exchange. That principal binding does not identify an individual user when
+several customers share a key.
+
+For a local demonstration, you can copy the callback's connection ID into your
+server-side test client. For a seamless customer-facing flow, implement a callback
+route in **your application backend**:
+
+1. When starting consent, extract the generated `state` from `authorization_url` and
+   store a short-lived pending record tying it to the authenticated user and tenant.
+   Keep the mapper's state unchanged; do not log the URL or state.
+2. Set `ADS_REDIRECT_URI` to that application's public HTTPS callback URL and register
+   the exact same URL in Google's OAuth client. That route must forward the Google
+   `state` and `code` (or denial `error`) server-to-server to the mapper's
+   `GET /oauth/callback`. The mapper uses the configured redirect URI during token
+   exchange, even though your application receives the browser redirect.
+3. Before forwarding, validate the pending state against the initiating authenticated
+   session and tenant, including any required reauthentication after the Google
+   redirect. Consume the pending attempt once, let the mapper validate its own state,
+   and save a successful `connection_id` only to that tenant. Do not blindly attach
+   a connection ID submitted by a browser to the current user.
+4. Redirect to a fixed completion screen in your app. On denial, expiry, or exchange
+   failure, show a retry action that starts a new consent attempt. Disable callback
+   query logging on your application's proxy/server too.
+
+This handoff route and customer UI are integration work in your application; they
+are not bundled in this repository.
+
+### Try the external-service calls in mock mode
+
+With the local server running, run this from the repository root using
+`.venv/bin/python`. It uses the installed `httpx` dependency and the default mock key.
+In your real backend, load the base URL and tenant key from server-side configuration
+and load the connection ID from your authenticated customer's stored mapping.
+
+```python
+import httpx
+
+with httpx.Client(
+    base_url="http://localhost:8000",
+    headers={"X-API-Key": "local-dev-key"},
+    timeout=120,
+) as mapper:
+    def checked(response):
+        response.raise_for_status()
+        return response
+
+    # Mock only. In live mode, use the OAuth journey above instead.
+    connection_id = checked(mapper.post("/connections/mock")).json()["connection_id"]
+    path = f"/connections/{connection_id}"
+    try:
+        accounts = checked(mapper.get(f"{path}/accounts")).json()
+        print("Available accounts:", accounts)
+
+        # Fixture account; in your product use the customer's account-picker choices.
+        customer_id = "1234567890"
+        checked(mapper.put(f"{path}/accounts", json={"customer_ids": [customer_id]}))
+        created = checked(mapper.post(f"{path}/reports", json={
+            "customer_id": customer_id,
+            "follow_redirects": False,
+        })).json()
+        report_id = created["report_id"]
+        print("Landing-page groups:", len(created["report"]["landing_pages"]))
+        print("Unmapped records:", len(created["report"]["unmapped_ads"]))
+
+        report_path = f"{path}/reports/{report_id}"
+        saved_report = checked(mapper.get(report_path)).json()
+        csv_export = checked(mapper.get(report_path, params={"format": "csv"})).text
+        html_table = checked(mapper.get(report_path, params={"format": "table"})).text
+        # Return authorized data/downloads to your customer from your own backend.
+    finally:
+        # Demo cleanup only; keep the connection for future use in your real app.
+        checked(mapper.delete(path))
+```
+
+The included [smoke test](scripts/smoke_test.py) automates the same lifecycle.
+See the [JSON sample](examples/sample-report.json) and
+[report schema](docs/report-schema.json) when building your customer report UI.
+For production, use HTTPS, live credentials, persistent encrypted storage, and the
+single-replica hosting requirements in the [hosting guide](docs/aws-hosting.md).
 
 ## Google OAuth and production access
 
