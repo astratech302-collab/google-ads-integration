@@ -1,0 +1,781 @@
+{
+  "captured_at": "2026-10-17T12:00:00Z",
+  "responses": {
+    "customer": [
+      {
+        "results": [
+          {
+            "customer": {
+              "resource_name": "customers/1234567890",
+              "id": "1234567890",
+              "descriptive_name": "Demo Store",
+              "currency_code": "USD",
+              "time_zone": "America/New_York",
+              "tracking_url_template": "https://tracker.example.net/click?url={lpurl}"
+            }
+          }
+        ]
+      }
+    ],
+    "campaign": [
+      {
+        "results": [
+          {
+            "campaign": {
+              "resource_name": "customers/1234567890/campaigns/10",
+              "id": "10",
+              "name": "Search Shirts",
+              "status": "ENABLED",
+              "advertising_channel_type": "SEARCH",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+              "campaign_budget": "customers/1234567890/campaignBudgets/10"
+            }
+          },
+          {
+            "campaign": {
+              "resource_name": "customers/1234567890/campaigns/20",
+              "id": "20",
+              "name": "Display Remarketing",
+              "status": "ENABLED",
+              "advertising_channel_type": "DISPLAY",
+              "bidding_strategy_type": "MANUAL_CPC",
+              "campaign_budget": "customers/1234567890/campaignBudgets/20"
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "campaign": {
+              "resource_name": "customers/1234567890/campaigns/30",
+              "id": "30",
+              "name": "Performance Max Store",
+              "status": "ENABLED",
+              "advertising_channel_type": "PERFORMANCE_MAX",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSION_VALUE",
+              "campaign_budget": "customers/1234567890/campaignBudgets/30"
+            }
+          },
+          {
+            "campaign": {
+              "resource_name": "customers/1234567890/campaigns/40",
+              "id": "40",
+              "name": "Shopping Catalog",
+              "status": "ENABLED",
+              "advertising_channel_type": "SHOPPING",
+              "bidding_strategy_type": "MANUAL_CPC",
+              "campaign_budget": "customers/1234567890/campaignBudgets/40"
+            }
+          }
+        ]
+      }
+    ],
+    "campaign_budget": [
+      {
+        "results": [
+          {
+            "campaign_budget": {
+              "resource_name": "customers/1234567890/campaignBudgets/10",
+              "id": "10",
+              "amount_micros": "50000000",
+              "period": "DAILY",
+              "explicitly_shared": false
+            }
+          },
+          {
+            "campaign_budget": {
+              "resource_name": "customers/1234567890/campaignBudgets/20",
+              "id": "20",
+              "amount_micros": "25000000",
+              "period": "DAILY",
+              "explicitly_shared": false
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "campaign_budget": {
+              "resource_name": "customers/1234567890/campaignBudgets/30",
+              "id": "30",
+              "amount_micros": "100000000",
+              "period": "DAILY",
+              "explicitly_shared": false
+            }
+          },
+          {
+            "campaign_budget": {
+              "resource_name": "customers/1234567890/campaignBudgets/40",
+              "id": "40",
+              "amount_micros": "35000000",
+              "period": "DAILY",
+              "explicitly_shared": false
+            }
+          }
+        ]
+      }
+    ],
+    "bidding_strategy": [
+      {
+        "results": []
+      }
+    ],
+    "ad_group": [
+      {
+        "results": [
+          {
+            "ad_group": {
+              "resource_name": "customers/1234567890/adGroups/100",
+              "id": "100",
+              "name": "Group 100",
+              "status": "ENABLED",
+              "campaign": "customers/1234567890/campaigns/10"
+            }
+          },
+          {
+            "ad_group": {
+              "resource_name": "customers/1234567890/adGroups/200",
+              "id": "200",
+              "name": "Group 200",
+              "status": "ENABLED",
+              "campaign": "customers/1234567890/campaigns/20"
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "ad_group": {
+              "resource_name": "customers/1234567890/adGroups/400",
+              "id": "400",
+              "name": "Group 400",
+              "status": "ENABLED",
+              "campaign": "customers/1234567890/campaigns/40"
+            }
+          }
+        ]
+      }
+    ],
+    "ad_group_ad": [
+      {
+        "results": [
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~1",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/1",
+                "id": "1",
+                "type": "RESPONSIVE_SEARCH_AD",
+                "final_urls": [
+                  "https://Example.com/shirts/?utm_source=google&color=blue",
+                  "https://example.com/sale"
+                ],
+                "final_url_suffix": "utm_campaign=shirts",
+                "url_custom_parameters": [
+                  {
+                    "key": "campaign",
+                    "value": "shirts"
+                  }
+                ],
+                "responsive_search_ad": {
+                  "headlines": [
+                    {
+                      "text": "Soft Cotton Shirts",
+                      "pinned_field": "HEADLINE_1"
+                    },
+                    {
+                      "text": "Shop New Colors"
+                    }
+                  ],
+                  "descriptions": [
+                    {
+                      "text": "Everyday comfort. Free shipping on qualifying orders."
+                    }
+                  ],
+                  "path1": "shirts",
+                  "path2": "cotton"
+                }
+              },
+              "status": "ENABLED",
+              "ad_strength": "GOOD",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          },
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~2",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/2",
+                "id": "2",
+                "type": "RESPONSIVE_SEARCH_AD",
+                "final_urls": [
+                  "https://example.com/shirts?color=blue&gclid=synthetic",
+                  "https://example.com/shirts/?color=blue&utm_medium=cpc"
+                ],
+                "responsive_search_ad": {
+                  "headlines": [
+                    {
+                      "text": "Your New Favorite Shirt"
+                    }
+                  ],
+                  "descriptions": [
+                    {
+                      "text": "Browse our latest collection."
+                    }
+                  ],
+                  "path1": "shirts"
+                }
+              },
+              "status": "PAUSED",
+              "ad_strength": "GOOD",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/200~3",
+              "ad_group": "customers/1234567890/adGroups/200",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/3",
+                "id": "3",
+                "type": "RESPONSIVE_DISPLAY_AD",
+                "final_urls": [
+                  "https://example.com/sale?fbclid=synthetic"
+                ],
+                "final_mobile_urls": [
+                  "https://m.example.com/sale/?utm_source=google"
+                ],
+                "responsive_display_ad": {
+                  "headlines": [
+                    {
+                      "text": "Seasonal Sale"
+                    }
+                  ],
+                  "long_headline": {
+                    "text": "Save on shirts this season"
+                  },
+                  "descriptions": [
+                    {
+                      "text": "Limited-time offers"
+                    }
+                  ],
+                  "marketing_images": [
+                    {
+                      "asset": "customers/1234567890/assets/504"
+                    }
+                  ],
+                  "business_name": "Demo Store"
+                }
+              },
+              "status": "ENABLED",
+              "ad_strength": "UNSPECIFIED",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          },
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/400~4",
+              "ad_group": "customers/1234567890/adGroups/400",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/4",
+                "id": "4",
+                "type": "SHOPPING_PRODUCT_AD",
+                "final_urls": [],
+                "shopping_product_ad": {}
+              },
+              "status": "ENABLED",
+              "ad_strength": "UNSPECIFIED",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-2"
+      },
+      {
+        "results": [
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~5",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/5",
+                "id": "5",
+                "type": "EXPANDED_DYNAMIC_SEARCH_AD",
+                "final_urls": [],
+                "expanded_dynamic_search_ad": {
+                  "description": "Explore the collection",
+                  "description2": "Find your fit"
+                }
+              },
+              "status": "ENABLED",
+              "ad_strength": "UNSPECIFIED",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          },
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~6",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/6",
+                "id": "6",
+                "type": "CALL_AD",
+                "final_urls": []
+              },
+              "status": "ENABLED",
+              "ad_strength": "UNSPECIFIED",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-3"
+      },
+      {
+        "results": [
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~7",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/7",
+                "id": "7",
+                "type": "RESPONSIVE_SEARCH_AD",
+                "final_urls": [
+                  "https://example.com/removed"
+                ]
+              },
+              "status": "REMOVED",
+              "ad_strength": "GOOD",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          },
+          {
+            "ad_group_ad": {
+              "resource_name": "customers/1234567890/adGroupAds/100~8",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "ad": {
+                "resource_name": "customers/1234567890/ads/8",
+                "id": "8",
+                "type": "TEXT_AD",
+                "final_urls": [
+                  "not a URL",
+                  "https://example.com/sale"
+                ],
+                "text_ad": {
+                  "headline": "Browse Sale",
+                  "description1": "Save today",
+                  "description2": "Shop online"
+                }
+              },
+              "status": "ENABLED",
+              "ad_strength": "UNSPECIFIED",
+              "policy_summary": {
+                "approval_status": "APPROVED"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "asset_group": [
+      {
+        "results": [
+          {
+            "asset_group": {
+              "resource_name": "customers/1234567890/assetGroups/300",
+              "id": "300",
+              "name": "Shirts Asset Group",
+              "campaign": "customers/1234567890/campaigns/30",
+              "status": "ENABLED",
+              "ad_strength": "EXCELLENT",
+              "path1": "shirts",
+              "final_urls": [
+                "https://example.com/shirts/?color=blue&utm_campaign=pmax"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ad_group_criterion": [
+      {
+        "results": [
+          {
+            "ad_group_criterion": {
+              "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "1",
+              "type": "KEYWORD",
+              "negative": false,
+              "status": "ENABLED",
+              "keyword": {
+                "text": "cotton shirts",
+                "match_type": "PHRASE"
+              }
+            }
+          },
+          {
+            "ad_group_criterion": {
+              "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "2",
+              "type": "KEYWORD",
+              "negative": true,
+              "status": "ENABLED",
+              "keyword": {
+                "text": "free",
+                "match_type": "BROAD"
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "ad_group_criterion": {
+              "resource_name": "customers/1234567890/adGroupCriteria/100~3",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "3",
+              "type": "KEYWORD",
+              "negative": false,
+              "status": "REMOVED",
+              "keyword": {
+                "text": "old keyword",
+                "match_type": "EXACT"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "campaign_criterion": [
+      {
+        "results": [
+          {
+            "campaign_criterion": {
+              "resource_name": "customers/1234567890/campaignCriteria/10~1",
+              "campaign": "customers/1234567890/campaigns/10",
+              "type": "LOCATION",
+              "negative": false,
+              "location": {
+                "geo_target_constant": "geoTargetConstants/2840"
+              }
+            }
+          },
+          {
+            "campaign_criterion": {
+              "resource_name": "customers/1234567890/campaignCriteria/10~2",
+              "campaign": "customers/1234567890/campaigns/10",
+              "type": "DEVICE",
+              "device": {
+                "type": "MOBILE"
+              },
+              "bid_modifier": 1.1
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "campaign_criterion": {
+              "resource_name": "customers/1234567890/campaignCriteria/10~3",
+              "campaign": "customers/1234567890/campaigns/10",
+              "type": "AD_SCHEDULE",
+              "ad_schedule": {
+                "day_of_week": "MONDAY",
+                "start_hour": 9,
+                "start_minute": "ZERO",
+                "end_hour": 18,
+                "end_minute": "ZERO"
+              }
+            }
+          },
+          {
+            "campaign_criterion": {
+              "resource_name": "customers/1234567890/campaignCriteria/10~4",
+              "campaign": "customers/1234567890/campaigns/10",
+              "type": "KEYWORD",
+              "negative": true,
+              "keyword": {
+                "text": "jobs",
+                "match_type": "BROAD"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "campaign_shared_set": [
+      {
+        "results": [
+          {
+            "campaign_shared_set": {
+              "resource_name": "customers/1234567890/campaignSharedSets/10~600",
+              "campaign": "customers/1234567890/campaigns/10",
+              "shared_set": "customers/1234567890/sharedSets/600",
+              "status": "ENABLED"
+            }
+          }
+        ]
+      }
+    ],
+    "shared_criterion": [
+      {
+        "results": [
+          {
+            "shared_criterion": {
+              "resource_name": "customers/1234567890/sharedCriteria/600~601",
+              "shared_set": "customers/1234567890/sharedSets/600",
+              "keyword": {
+                "text": "used",
+                "match_type": "BROAD"
+              }
+            }
+          },
+          {
+            "shared_criterion": {
+              "resource_name": "customers/1234567890/sharedCriteria/701~702",
+              "shared_set": "customers/1234567890/sharedSets/701",
+              "keyword": {
+                "text": "counterfeit",
+                "match_type": "BROAD"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "customer_negative_criterion": [
+      {
+        "results": [
+          {
+            "customer_negative_criterion": {
+              "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+              "type": "NEGATIVE_KEYWORD_LIST",
+              "negative_keyword_list": {
+                "shared_set": "customers/1234567890/sharedSets/701"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "ad_group_bid_modifier": [
+      {
+        "results": []
+      }
+    ],
+    "customer_asset": [
+      {
+        "results": [
+          {
+            "customer_asset": {
+              "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+              "asset": "customers/1234567890/assets/502",
+              "field_type": "CALLOUT",
+              "status": "ENABLED"
+            }
+          }
+        ]
+      }
+    ],
+    "campaign_asset": [
+      {
+        "results": [
+          {
+            "campaign_asset": {
+              "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+              "campaign": "customers/1234567890/campaigns/10",
+              "asset": "customers/1234567890/assets/501",
+              "field_type": "SITELINK",
+              "status": "ENABLED"
+            }
+          }
+        ]
+      }
+    ],
+    "ad_group_asset": [
+      {
+        "results": [
+          {
+            "ad_group_asset": {
+              "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+              "ad_group": "customers/1234567890/adGroups/100",
+              "asset": "customers/1234567890/assets/503",
+              "field_type": "STRUCTURED_SNIPPET",
+              "status": "ENABLED"
+            }
+          }
+        ]
+      }
+    ],
+    "asset_group_asset": [
+      {
+        "results": [
+          {
+            "asset_group_asset": {
+              "resource_name": "customers/1234567890/assetGroupAssets/300~505~HEADLINE",
+              "asset_group": "customers/1234567890/assetGroups/300",
+              "asset": "customers/1234567890/assets/505",
+              "field_type": "HEADLINE",
+              "status": "ENABLED"
+            }
+          },
+          {
+            "asset_group_asset": {
+              "resource_name": "customers/1234567890/assetGroupAssets/300~506~DESCRIPTION",
+              "asset_group": "customers/1234567890/assetGroups/300",
+              "asset": "customers/1234567890/assets/506",
+              "field_type": "DESCRIPTION",
+              "status": "ENABLED"
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "asset_group_asset": {
+              "resource_name": "customers/1234567890/assetGroupAssets/300~504~MARKETING_IMAGE",
+              "asset_group": "customers/1234567890/assetGroups/300",
+              "asset": "customers/1234567890/assets/504",
+              "field_type": "MARKETING_IMAGE",
+              "status": "ENABLED"
+            }
+          }
+        ]
+      }
+    ],
+    "asset": [
+      {
+        "results": [
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/501",
+              "id": "501",
+              "type": "SITELINK",
+              "sitelink_asset": {
+                "link_text": "New Arrivals",
+                "description1": "Fresh styles",
+                "description2": "Explore now"
+              },
+              "final_urls": [
+                "https://example.com/new"
+              ]
+            }
+          },
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/502",
+              "id": "502",
+              "type": "CALLOUT",
+              "callout_asset": {
+                "callout_text": "Free Returns"
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-1"
+      },
+      {
+        "results": [
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/503",
+              "id": "503",
+              "type": "STRUCTURED_SNIPPET",
+              "structured_snippet_asset": {
+                "header": "Styles",
+                "values": [
+                  "Casual",
+                  "Formal"
+                ]
+              }
+            }
+          },
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/504",
+              "id": "504",
+              "type": "IMAGE",
+              "image_asset": {
+                "full_size": {
+                  "url": "https://cdn.example.com/shirt.jpg",
+                  "width_pixels": "1200",
+                  "height_pixels": "628"
+                }
+              }
+            }
+          }
+        ],
+        "next_page_token": "fixture-page-2"
+      },
+      {
+        "results": [
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/505",
+              "id": "505",
+              "type": "TEXT",
+              "text_asset": {
+                "text": "Find Your Everyday Shirt"
+              }
+            }
+          },
+          {
+            "asset": {
+              "resource_name": "customers/1234567890/assets/506",
+              "id": "506",
+              "type": "TEXT",
+              "text_asset": {
+                "text": "Quality fabrics, fresh colors."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "asset_group_signal": [
+      {
+        "results": []
+      }
+    ],
+    "asset_group_listing_group_filter": [
+      {
+        "results": []
+      }
+    ]
+  }
+}

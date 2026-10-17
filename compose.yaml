@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ADS_MODE: mock
+      ADS_DATABASE: /data/ads.sqlite3
+    volumes:
+      - ads-data:/data
+    restart: unless-stopped
+volumes:
+  ads-data:

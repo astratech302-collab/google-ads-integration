@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ads-landing-mapper"
+version = "0.1.0"
+description = "Read-only Google Ads configuration grouped by landing page"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<1", "uvicorn[standard]>=0.30,<1", "pydantic-settings>=2.6,<3", "google-ads>=34,<35", "cryptography>=44", "httpx>=0.28,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

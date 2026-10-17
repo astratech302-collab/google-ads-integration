@@ -1,0 +1,2215 @@
+{
+  "ad_types": {
+    "APP_AD": {
+      "available_fields": [
+        "app_deep_link",
+        "descriptions",
+        "headlines",
+        "html5_media_bundles",
+        "images",
+        "mandatory_ad_text",
+        "youtube_videos"
+      ],
+      "creative_field": "app_ad",
+      "message": "google.ads.googleads.v23.common.AppAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "APP_ENGAGEMENT_AD": {
+      "available_fields": [
+        "descriptions",
+        "headlines",
+        "images",
+        "videos"
+      ],
+      "creative_field": "app_engagement_ad",
+      "message": "google.ads.googleads.v23.common.AppEngagementAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "APP_PRE_REGISTRATION_AD": {
+      "available_fields": [
+        "descriptions",
+        "headlines",
+        "images",
+        "youtube_videos"
+      ],
+      "creative_field": "app_pre_registration_ad",
+      "message": "google.ads.googleads.v23.common.AppPreRegistrationAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "CALL_AD": {
+      "available_fields": [],
+      "creative_field": null,
+      "message": null,
+      "note": "Use semantic equivalents such as headline_part1 or nested video copy where present; see messages registry. No creative payload exists in this API schema.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "DEMAND_GEN_CAROUSEL_AD": {
+      "available_fields": [
+        "business_name",
+        "call_to_action_text",
+        "carousel_cards",
+        "description",
+        "headline",
+        "logo_image"
+      ],
+      "creative_field": "demand_gen_carousel_ad",
+      "message": "google.ads.googleads.v23.common.DemandGenCarouselAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "DEMAND_GEN_MULTI_ASSET_AD": {
+      "available_fields": [
+        "business_name",
+        "call_to_action_text",
+        "descriptions",
+        "headlines",
+        "logo_images",
+        "marketing_images",
+        "portrait_marketing_images",
+        "square_marketing_images",
+        "tall_portrait_marketing_images"
+      ],
+      "creative_field": "demand_gen_multi_asset_ad",
+      "message": "google.ads.googleads.v23.common.DemandGenMultiAssetAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "DEMAND_GEN_PRODUCT_AD": {
+      "available_fields": [
+        "breadcrumb1",
+        "breadcrumb2",
+        "business_name",
+        "call_to_action",
+        "description",
+        "headline",
+        "logo_image"
+      ],
+      "creative_field": "demand_gen_product_ad",
+      "message": "google.ads.googleads.v23.common.DemandGenProductAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "DEMAND_GEN_VIDEO_RESPONSIVE_AD": {
+      "available_fields": [
+        "breadcrumb1",
+        "breadcrumb2",
+        "business_name",
+        "call_to_actions",
+        "companion_banners",
+        "descriptions",
+        "headlines",
+        "logo_images",
+        "long_headlines",
+        "videos"
+      ],
+      "creative_field": "demand_gen_video_responsive_ad",
+      "message": "google.ads.googleads.v23.common.DemandGenVideoResponsiveAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "DYNAMIC_HTML5_AD": {
+      "available_fields": [
+        "display_upload_product_type",
+        "media_bundle"
+      ],
+      "creative_field": "display_upload_ad",
+      "message": "google.ads.googleads.v23.common.DisplayUploadAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "EXPANDED_DYNAMIC_SEARCH_AD": {
+      "available_fields": [
+        "description",
+        "description2"
+      ],
+      "creative_field": "expanded_dynamic_search_ad",
+      "message": "google.ads.googleads.v23.common.ExpandedDynamicSearchAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "EXPANDED_TEXT_AD": {
+      "available_fields": [
+        "description",
+        "description2",
+        "headline_part1",
+        "headline_part2",
+        "headline_part3",
+        "path1",
+        "path2"
+      ],
+      "creative_field": "expanded_text_ad",
+      "message": "google.ads.googleads.v23.common.ExpandedTextAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions"
+      ]
+    },
+    "HOTEL_AD": {
+      "available_fields": [],
+      "creative_field": "hotel_ad",
+      "message": "google.ads.googleads.v23.common.HotelAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "HTML5_UPLOAD_AD": {
+      "available_fields": [
+        "display_upload_product_type",
+        "media_bundle"
+      ],
+      "creative_field": "display_upload_ad",
+      "message": "google.ads.googleads.v23.common.DisplayUploadAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "IMAGE_AD": {
+      "available_fields": [
+        "ad_id_to_copy_image_from",
+        "data",
+        "image_asset",
+        "image_url",
+        "mime_type",
+        "name",
+        "pixel_height",
+        "pixel_width",
+        "preview_image_url",
+        "preview_pixel_height",
+        "preview_pixel_width"
+      ],
+      "creative_field": "image_ad",
+      "message": "google.ads.googleads.v23.common.ImageAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "IN_FEED_VIDEO_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "LEGACY_APP_INSTALL_AD": {
+      "available_fields": [
+        "app_id",
+        "app_store",
+        "description1",
+        "description2",
+        "headline"
+      ],
+      "creative_field": "legacy_app_install_ad",
+      "message": "google.ads.googleads.v23.common.LegacyAppInstallAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "LEGACY_RESPONSIVE_DISPLAY_AD": {
+      "available_fields": [
+        "accent_color",
+        "allow_flexible_color",
+        "business_name",
+        "call_to_action_text",
+        "description",
+        "format_setting",
+        "logo_image",
+        "long_headline",
+        "main_color",
+        "marketing_image",
+        "price_prefix",
+        "promo_text",
+        "short_headline",
+        "square_logo_image",
+        "square_marketing_image"
+      ],
+      "creative_field": "legacy_responsive_display_ad",
+      "message": "google.ads.googleads.v23.common.LegacyResponsiveDisplayAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "LOCAL_AD": {
+      "available_fields": [
+        "call_to_actions",
+        "descriptions",
+        "headlines",
+        "logo_images",
+        "marketing_images",
+        "path1",
+        "path2",
+        "videos"
+      ],
+      "creative_field": "local_ad",
+      "message": "google.ads.googleads.v23.common.LocalAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": []
+    },
+    "RESPONSIVE_DISPLAY_AD": {
+      "available_fields": [
+        "accent_color",
+        "allow_flexible_color",
+        "business_name",
+        "call_to_action_text",
+        "control_spec",
+        "descriptions",
+        "format_setting",
+        "headlines",
+        "logo_images",
+        "long_headline",
+        "main_color",
+        "marketing_images",
+        "price_prefix",
+        "promo_text",
+        "square_logo_images",
+        "square_marketing_images",
+        "youtube_videos"
+      ],
+      "creative_field": "responsive_display_ad",
+      "message": "google.ads.googleads.v23.common.ResponsiveDisplayAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "RESPONSIVE_SEARCH_AD": {
+      "available_fields": [
+        "descriptions",
+        "headlines",
+        "path1",
+        "path2"
+      ],
+      "creative_field": "responsive_search_ad",
+      "message": "google.ads.googleads.v23.common.ResponsiveSearchAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": []
+    },
+    "SHOPPING_COMPARISON_LISTING_AD": {
+      "available_fields": [
+        "headline"
+      ],
+      "creative_field": "shopping_comparison_listing_ad",
+      "message": "google.ads.googleads.v23.common.ShoppingComparisonListingAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "SHOPPING_PRODUCT_AD": {
+      "available_fields": [],
+      "creative_field": "shopping_product_ad",
+      "message": "google.ads.googleads.v23.common.ShoppingProductAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "SHOPPING_SMART_AD": {
+      "available_fields": [],
+      "creative_field": "shopping_smart_ad",
+      "message": "google.ads.googleads.v23.common.ShoppingSmartAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "SMART_CAMPAIGN_AD": {
+      "available_fields": [
+        "descriptions",
+        "headlines"
+      ],
+      "creative_field": "smart_campaign_ad",
+      "message": "google.ads.googleads.v23.common.SmartCampaignAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "TEXT_AD": {
+      "available_fields": [
+        "description1",
+        "description2",
+        "headline"
+      ],
+      "creative_field": "text_ad",
+      "message": "google.ads.googleads.v23.common.TextAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "TRAVEL_AD": {
+      "available_fields": [],
+      "creative_field": "travel_ad",
+      "message": "google.ads.googleads.v23.common.TravelAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "UNKNOWN": {
+      "available_fields": [],
+      "creative_field": null,
+      "message": null,
+      "note": "Use semantic equivalents such as headline_part1 or nested video copy where present; see messages registry. No creative payload exists in this API schema.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "UNSPECIFIED": {
+      "available_fields": [],
+      "creative_field": null,
+      "message": null,
+      "note": "Use semantic equivalents such as headline_part1 or nested video copy where present; see messages registry. No creative payload exists in this API schema.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "VIDEO_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "VIDEO_BUMPER_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "VIDEO_NON_SKIPPABLE_IN_STREAM_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "VIDEO_RESPONSIVE_AD": {
+      "available_fields": [
+        "breadcrumb1",
+        "breadcrumb2",
+        "business_name",
+        "call_to_actions",
+        "companion_banners",
+        "descriptions",
+        "headlines",
+        "logo_images",
+        "long_headlines",
+        "videos"
+      ],
+      "creative_field": "video_responsive_ad",
+      "message": "google.ads.googleads.v23.common.VideoResponsiveAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "path1",
+        "path2"
+      ]
+    },
+    "VIDEO_TRUEVIEW_IN_STREAM_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    },
+    "YOUTUBE_AUDIO_AD": {
+      "available_fields": [
+        "audio",
+        "bumper",
+        "in_feed",
+        "in_stream",
+        "non_skippable",
+        "out_stream",
+        "video"
+      ],
+      "creative_field": "video_ad",
+      "message": "google.ads.googleads.v23.common.VideoAdInfo",
+      "note": "Schema fields; live selectability verified using GoogleAdsFieldService.",
+      "unavailable_common_copy_fields": [
+        "headlines",
+        "descriptions",
+        "path1",
+        "path2"
+      ]
+    }
+  },
+  "api_version": "v23",
+  "common_ad_message": "google.ads.googleads.v23.resources.Ad",
+  "enums": {
+    "google.ads.googleads.v23.enums.AdTypeEnum.AdType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "TEXT_AD",
+      "EXPANDED_TEXT_AD",
+      "EXPANDED_DYNAMIC_SEARCH_AD",
+      "HOTEL_AD",
+      "SHOPPING_SMART_AD",
+      "SHOPPING_PRODUCT_AD",
+      "VIDEO_AD",
+      "IMAGE_AD",
+      "RESPONSIVE_SEARCH_AD",
+      "LEGACY_RESPONSIVE_DISPLAY_AD",
+      "APP_AD",
+      "LEGACY_APP_INSTALL_AD",
+      "RESPONSIVE_DISPLAY_AD",
+      "LOCAL_AD",
+      "HTML5_UPLOAD_AD",
+      "DYNAMIC_HTML5_AD",
+      "APP_ENGAGEMENT_AD",
+      "SHOPPING_COMPARISON_LISTING_AD",
+      "VIDEO_BUMPER_AD",
+      "VIDEO_NON_SKIPPABLE_IN_STREAM_AD",
+      "VIDEO_TRUEVIEW_IN_STREAM_AD",
+      "VIDEO_RESPONSIVE_AD",
+      "SMART_CAMPAIGN_AD",
+      "CALL_AD",
+      "APP_PRE_REGISTRATION_AD",
+      "IN_FEED_VIDEO_AD",
+      "TRAVEL_AD",
+      "DEMAND_GEN_PRODUCT_AD",
+      "DEMAND_GEN_MULTI_ASSET_AD",
+      "DEMAND_GEN_CAROUSEL_AD",
+      "DEMAND_GEN_VIDEO_RESPONSIVE_AD",
+      "YOUTUBE_AUDIO_AD"
+    ],
+    "google.ads.googleads.v23.enums.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "IOS",
+      "ANDROID"
+    ],
+    "google.ads.googleads.v23.enums.AssetPerformanceLabelEnum.AssetPerformanceLabel": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "PENDING",
+      "LEARNING",
+      "LOW",
+      "GOOD",
+      "BEST",
+      "NOT_APPLICABLE"
+    ],
+    "google.ads.googleads.v23.enums.DeviceEnum.Device": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "MOBILE",
+      "TABLET",
+      "DESKTOP",
+      "OTHER",
+      "CONNECTED_TV"
+    ],
+    "google.ads.googleads.v23.enums.DisplayAdFormatSettingEnum.DisplayAdFormatSetting": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "ALL_FORMATS",
+      "NON_NATIVE",
+      "NATIVE"
+    ],
+    "google.ads.googleads.v23.enums.DisplayUploadProductTypeEnum.DisplayUploadProductType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "HTML5_UPLOAD_AD",
+      "DYNAMIC_HTML5_EDUCATION_AD",
+      "DYNAMIC_HTML5_FLIGHT_AD",
+      "DYNAMIC_HTML5_HOTEL_RENTAL_AD",
+      "DYNAMIC_HTML5_JOB_AD",
+      "DYNAMIC_HTML5_LOCAL_AD",
+      "DYNAMIC_HTML5_REAL_ESTATE_AD",
+      "DYNAMIC_HTML5_CUSTOM_AD",
+      "DYNAMIC_HTML5_TRAVEL_AD",
+      "DYNAMIC_HTML5_HOTEL_AD"
+    ],
+    "google.ads.googleads.v23.enums.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStore": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "APPLE_APP_STORE",
+      "GOOGLE_PLAY",
+      "WINDOWS_STORE",
+      "WINDOWS_PHONE_STORE",
+      "CN_APP_STORE"
+    ],
+    "google.ads.googleads.v23.enums.MimeTypeEnum.MimeType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "IMAGE_JPEG",
+      "IMAGE_GIF",
+      "IMAGE_PNG",
+      "FLASH",
+      "TEXT_HTML",
+      "PDF",
+      "MSWORD",
+      "MSEXCEL",
+      "RTF",
+      "AUDIO_WAV",
+      "AUDIO_MP3",
+      "HTML5_AD_ZIP"
+    ],
+    "google.ads.googleads.v23.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "DISAPPROVED",
+      "APPROVED_LIMITED",
+      "APPROVED",
+      "AREA_OF_INTEREST_ONLY"
+    ],
+    "google.ads.googleads.v23.enums.PolicyReviewStatusEnum.PolicyReviewStatus": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "REVIEW_IN_PROGRESS",
+      "REVIEWED",
+      "UNDER_APPEAL",
+      "ELIGIBLE_MAY_SERVE"
+    ],
+    "google.ads.googleads.v23.enums.PolicyTopicEntryTypeEnum.PolicyTopicEntryType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "PROHIBITED",
+      "LIMITED",
+      "DESCRIPTIVE",
+      "BROADENING",
+      "AREA_OF_INTEREST_ONLY",
+      "FULLY_LIMITED"
+    ],
+    "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.PolicyTopicEvidenceDestinationMismatchUrlType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "DISPLAY_URL",
+      "FINAL_URL",
+      "FINAL_MOBILE_URL",
+      "TRACKING_URL",
+      "MOBILE_TRACKING_URL"
+    ],
+    "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.PolicyTopicEvidenceDestinationNotWorkingDevice": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "DESKTOP",
+      "ANDROID",
+      "IOS"
+    ],
+    "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "HOSTNAME_NOT_FOUND",
+      "GOOGLE_CRAWLER_DNS_ISSUE"
+    ],
+    "google.ads.googleads.v23.enums.ServedAssetFieldTypeEnum.ServedAssetFieldType": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "HEADLINE_1",
+      "HEADLINE_2",
+      "HEADLINE_3",
+      "DESCRIPTION_1",
+      "DESCRIPTION_2",
+      "HEADLINE",
+      "HEADLINE_IN_PORTRAIT",
+      "LONG_HEADLINE",
+      "DESCRIPTION",
+      "DESCRIPTION_IN_PORTRAIT",
+      "BUSINESS_NAME_IN_PORTRAIT",
+      "BUSINESS_NAME",
+      "MARKETING_IMAGE",
+      "MARKETING_IMAGE_IN_PORTRAIT",
+      "SQUARE_MARKETING_IMAGE",
+      "PORTRAIT_MARKETING_IMAGE",
+      "LOGO",
+      "LANDSCAPE_LOGO",
+      "CALL_TO_ACTION",
+      "YOU_TUBE_VIDEO",
+      "SITELINK",
+      "CALL",
+      "MOBILE_APP",
+      "CALLOUT",
+      "STRUCTURED_SNIPPET",
+      "PRICE",
+      "PROMOTION",
+      "AD_IMAGE",
+      "LEAD_FORM",
+      "BUSINESS_LOGO",
+      "DESCRIPTION_PREFIX",
+      "HEADLINE_AS_SITELINK_POSITION_ONE",
+      "HEADLINE_AS_SITELINK_POSITION_TWO",
+      "DESCRIPTION_LINE_HEADLINE_AS_SITELINK_POSITION_ONE",
+      "DESCRIPTION_LINE_HEADLINE_AS_SITELINK_POSITION_TWO"
+    ],
+    "google.ads.googleads.v23.enums.SyntheticContentAttestationStatusEnum.SyntheticContentAttestationStatus": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "NOT_SYNTHETIC",
+      "IS_SYNTHETIC"
+    ],
+    "google.ads.googleads.v23.enums.SyntheticContentSourceEnum.SyntheticContentSource": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "ADVERTISER_ATTESTED",
+      "GOOGLE_GENERATED_ADVERTISER_REVIEWED",
+      "GOOGLE_GENERATED_FULLY_AUTOMATED"
+    ],
+    "google.ads.googleads.v23.enums.SystemManagedResourceSourceEnum.SystemManagedResourceSource": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "AD_VARIATIONS"
+    ],
+    "google.ads.googleads.v23.enums.VideoThumbnailEnum.VideoThumbnail": [
+      "UNSPECIFIED",
+      "UNKNOWN",
+      "DEFAULT_THUMBNAIL",
+      "THUMBNAIL_1",
+      "THUMBNAIL_2",
+      "THUMBNAIL_3"
+    ]
+  },
+  "messages": {
+    "google.ads.googleads.v23.common.AdAppDeepLinkAsset": {
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdAssetPolicySummary": {
+      "approval_status": {
+        "enum": "google.ads.googleads.v23.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus",
+        "presence": false,
+        "repeated": false
+      },
+      "policy_topic_entries": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEntry",
+        "presence": false,
+        "repeated": true
+      },
+      "review_status": {
+        "enum": "google.ads.googleads.v23.enums.PolicyReviewStatusEnum.PolicyReviewStatus",
+        "presence": false,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdCallToActionAsset": {
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdDemandGenCarouselCardAsset": {
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdImageAsset": {
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdMediaBundleAsset": {
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdTextAsset": {
+      "asset_performance_label": {
+        "enum": "google.ads.googleads.v23.enums.AssetPerformanceLabelEnum.AssetPerformanceLabel",
+        "presence": false,
+        "repeated": false
+      },
+      "pinned_field": {
+        "enum": "google.ads.googleads.v23.enums.ServedAssetFieldTypeEnum.ServedAssetFieldType",
+        "presence": false,
+        "repeated": false
+      },
+      "policy_summary_info": {
+        "message": "google.ads.googleads.v23.common.AdAssetPolicySummary",
+        "presence": true,
+        "repeated": false
+      },
+      "text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdVideoAsset": {
+      "ad_video_asset_info": {
+        "message": "google.ads.googleads.v23.common.AdVideoAssetInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "asset": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdVideoAssetInfo": {
+      "ad_video_asset_feature_control": {
+        "message": "google.ads.googleads.v23.common.AdVideoAssetLinkFeatureControl",
+        "presence": true,
+        "repeated": false
+      },
+      "ad_video_asset_inventory_preferences": {
+        "message": "google.ads.googleads.v23.common.AdVideoAssetInventoryPreferences",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdVideoAssetInventoryPreferences": {
+      "in_feed_preference": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "in_stream_preference": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "shorts_preference": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AdVideoAssetLinkFeatureControl": {
+      "allow_youtube_comments": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.AppAdInfo": {
+      "app_deep_link": {
+        "message": "google.ads.googleads.v23.common.AdAppDeepLinkAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "html5_media_bundles": {
+        "message": "google.ads.googleads.v23.common.AdMediaBundleAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "mandatory_ad_text": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "youtube_videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.AppEngagementAdInfo": {
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.AppPreRegistrationAdInfo": {
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "youtube_videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.CustomParameter": {
+      "key": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "value": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.DemandGenCarouselAdInfo": {
+      "business_name": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "call_to_action_text": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "carousel_cards": {
+        "message": "google.ads.googleads.v23.common.AdDemandGenCarouselCardAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "description": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "headline": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "logo_image": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.DemandGenMultiAssetAdInfo": {
+      "business_name": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "call_to_action_text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "portrait_marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "square_marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "tall_portrait_marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.DemandGenProductAdInfo": {
+      "breadcrumb1": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "breadcrumb2": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "business_name": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "call_to_action": {
+        "message": "google.ads.googleads.v23.common.AdCallToActionAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "description": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "headline": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "logo_image": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.DemandGenVideoResponsiveAdInfo": {
+      "breadcrumb1": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "breadcrumb2": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "business_name": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "call_to_actions": {
+        "message": "google.ads.googleads.v23.common.AdCallToActionAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "companion_banners": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "long_headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.DisplayUploadAdInfo": {
+      "display_upload_product_type": {
+        "enum": "google.ads.googleads.v23.enums.DisplayUploadProductTypeEnum.DisplayUploadProductType",
+        "presence": false,
+        "repeated": false
+      },
+      "media_bundle": {
+        "message": "google.ads.googleads.v23.common.AdMediaBundleAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.ExpandedDynamicSearchAdInfo": {
+      "description": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.ExpandedTextAdInfo": {
+      "description": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline_part1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline_part2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline_part3": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "path1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "path2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.FinalAppUrl": {
+      "os_type": {
+        "enum": "google.ads.googleads.v23.enums.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemType",
+        "presence": false,
+        "repeated": false
+      },
+      "url": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.HotelAdInfo": {},
+    "google.ads.googleads.v23.common.ImageAdInfo": {
+      "ad_id_to_copy_image_from": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "data": {
+        "presence": true,
+        "protobuf_type": 12,
+        "repeated": false
+      },
+      "image_asset": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "image_url": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "mime_type": {
+        "enum": "google.ads.googleads.v23.enums.MimeTypeEnum.MimeType",
+        "presence": false,
+        "repeated": false
+      },
+      "name": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "pixel_height": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "pixel_width": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "preview_image_url": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "preview_pixel_height": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "preview_pixel_width": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.InFeedVideoAdInfo": {
+      "description1": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description2": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "thumbnail": {
+        "enum": "google.ads.googleads.v23.enums.VideoThumbnailEnum.VideoThumbnail",
+        "presence": false,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.LegacyAppInstallAdInfo": {
+      "app_id": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "app_store": {
+        "enum": "google.ads.googleads.v23.enums.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStore",
+        "presence": false,
+        "repeated": false
+      },
+      "description1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.LegacyResponsiveDisplayAdInfo": {
+      "accent_color": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "allow_flexible_color": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "business_name": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "call_to_action_text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "format_setting": {
+        "enum": "google.ads.googleads.v23.enums.DisplayAdFormatSettingEnum.DisplayAdFormatSetting",
+        "presence": false,
+        "repeated": false
+      },
+      "logo_image": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "long_headline": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "main_color": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "marketing_image": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "price_prefix": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "promo_text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "short_headline": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "square_logo_image": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "square_marketing_image": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.LocalAdInfo": {
+      "call_to_actions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "path1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "path2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicConstraint": {
+      "certificate_domain_mismatch_in_country_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraintList",
+        "presence": true,
+        "repeated": false
+      },
+      "certificate_missing_in_country_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraintList",
+        "presence": true,
+        "repeated": false
+      },
+      "country_constraint_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraintList",
+        "presence": true,
+        "repeated": false
+      },
+      "reseller_constraint": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint.ResellerConstraint",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraint": {
+      "country_criterion": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraintList": {
+      "countries": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint.CountryConstraint",
+        "presence": false,
+        "repeated": true
+      },
+      "total_targeted_countries": {
+        "presence": true,
+        "protobuf_type": 5,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicConstraint.ResellerConstraint": {},
+    "google.ads.googleads.v23.common.PolicyTopicEntry": {
+      "constraints": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicConstraint",
+        "presence": false,
+        "repeated": true
+      },
+      "evidences": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence",
+        "presence": false,
+        "repeated": true
+      },
+      "topic": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "type_": {
+        "enum": "google.ads.googleads.v23.enums.PolicyTopicEntryTypeEnum.PolicyTopicEntryType",
+        "presence": false,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence": {
+      "destination_mismatch": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationMismatch",
+        "presence": true,
+        "repeated": false
+      },
+      "destination_not_working": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationNotWorking",
+        "presence": true,
+        "repeated": false
+      },
+      "destination_text_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationTextList",
+        "presence": true,
+        "repeated": false
+      },
+      "language_code": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "text_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence.TextList",
+        "presence": true,
+        "repeated": false
+      },
+      "website_list": {
+        "message": "google.ads.googleads.v23.common.PolicyTopicEvidence.WebsiteList",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationMismatch": {
+      "url_types": {
+        "enum": "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.PolicyTopicEvidenceDestinationMismatchUrlType",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationNotWorking": {
+      "device": {
+        "enum": "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.PolicyTopicEvidenceDestinationNotWorkingDevice",
+        "presence": false,
+        "repeated": false
+      },
+      "dns_error_type": {
+        "enum": "google.ads.googleads.v23.enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType",
+        "presence": true,
+        "repeated": false
+      },
+      "expanded_url": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "http_error_code": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "last_checked_date_time": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence.DestinationTextList": {
+      "destination_texts": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence.TextList": {
+      "texts": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.PolicyTopicEvidence.WebsiteList": {
+      "websites": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.ResponsiveDisplayAdControlSpec": {
+      "enable_asset_enhancements": {
+        "presence": false,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "enable_autogen_video": {
+        "presence": false,
+        "protobuf_type": 8,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.ResponsiveDisplayAdInfo": {
+      "accent_color": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "allow_flexible_color": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "business_name": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "call_to_action_text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "control_spec": {
+        "message": "google.ads.googleads.v23.common.ResponsiveDisplayAdControlSpec",
+        "presence": true,
+        "repeated": false
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "format_setting": {
+        "enum": "google.ads.googleads.v23.enums.DisplayAdFormatSettingEnum.DisplayAdFormatSetting",
+        "presence": false,
+        "repeated": false
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "long_headline": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "main_color": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "price_prefix": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "promo_text": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "square_logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "square_marketing_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "youtube_videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.ResponsiveSearchAdInfo": {
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "path1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "path2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.ShoppingComparisonListingAdInfo": {
+      "headline": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.ShoppingProductAdInfo": {},
+    "google.ads.googleads.v23.common.ShoppingSmartAdInfo": {},
+    "google.ads.googleads.v23.common.SmartCampaignAdInfo": {
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.SyntheticContentAttestation": {
+      "source": {
+        "enum": "google.ads.googleads.v23.enums.SyntheticContentSourceEnum.SyntheticContentSource",
+        "presence": false,
+        "repeated": false
+      },
+      "status": {
+        "enum": "google.ads.googleads.v23.enums.SyntheticContentAttestationStatusEnum.SyntheticContentAttestationStatus",
+        "presence": false,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.SyntheticContentInfo": {
+      "advertiser_attestation": {
+        "message": "google.ads.googleads.v23.common.SyntheticContentAttestation",
+        "presence": true,
+        "repeated": false
+      },
+      "system_attestation": {
+        "message": "google.ads.googleads.v23.common.SyntheticContentAttestation",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.TextAdInfo": {
+      "description1": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "description2": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.TravelAdInfo": {},
+    "google.ads.googleads.v23.common.UrlCollection": {
+      "final_mobile_urls": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      },
+      "final_urls": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      },
+      "tracking_url_template": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "url_collection_id": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.VideoAdInfo": {
+      "audio": {
+        "message": "google.ads.googleads.v23.common.YouTubeAudioAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "bumper": {
+        "message": "google.ads.googleads.v23.common.VideoBumperInStreamAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "in_feed": {
+        "message": "google.ads.googleads.v23.common.InFeedVideoAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "in_stream": {
+        "message": "google.ads.googleads.v23.common.VideoTrueViewInStreamAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "non_skippable": {
+        "message": "google.ads.googleads.v23.common.VideoNonSkippableInStreamAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "out_stream": {
+        "message": "google.ads.googleads.v23.common.VideoOutstreamAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "video": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.VideoBumperInStreamAdInfo": {
+      "action_button_label": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "action_headline": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "companion_banner": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.VideoNonSkippableInStreamAdInfo": {
+      "action_button_label": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "action_headline": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "companion_banner": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.VideoOutstreamAdInfo": {
+      "description": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "headline": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.VideoResponsiveAdInfo": {
+      "breadcrumb1": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "breadcrumb2": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "business_name": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": true,
+        "repeated": false
+      },
+      "call_to_actions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "companion_banners": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "descriptions": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "logo_images": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "long_headlines": {
+        "message": "google.ads.googleads.v23.common.AdTextAsset",
+        "presence": false,
+        "repeated": true
+      },
+      "videos": {
+        "message": "google.ads.googleads.v23.common.AdVideoAsset",
+        "presence": false,
+        "repeated": true
+      }
+    },
+    "google.ads.googleads.v23.common.VideoTrueViewInStreamAdInfo": {
+      "action_button_label": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "action_headline": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "companion_banner": {
+        "message": "google.ads.googleads.v23.common.AdImageAsset",
+        "presence": true,
+        "repeated": false
+      }
+    },
+    "google.ads.googleads.v23.common.YouTubeAudioAdInfo": {},
+    "google.ads.googleads.v23.resources.Ad": {
+      "added_by_google_ads": {
+        "presence": true,
+        "protobuf_type": 8,
+        "repeated": false
+      },
+      "app_ad": {
+        "message": "google.ads.googleads.v23.common.AppAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "app_engagement_ad": {
+        "message": "google.ads.googleads.v23.common.AppEngagementAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "app_pre_registration_ad": {
+        "message": "google.ads.googleads.v23.common.AppPreRegistrationAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "demand_gen_carousel_ad": {
+        "message": "google.ads.googleads.v23.common.DemandGenCarouselAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "demand_gen_multi_asset_ad": {
+        "message": "google.ads.googleads.v23.common.DemandGenMultiAssetAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "demand_gen_product_ad": {
+        "message": "google.ads.googleads.v23.common.DemandGenProductAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "demand_gen_video_responsive_ad": {
+        "message": "google.ads.googleads.v23.common.DemandGenVideoResponsiveAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "device_preference": {
+        "enum": "google.ads.googleads.v23.enums.DeviceEnum.Device",
+        "presence": false,
+        "repeated": false
+      },
+      "display_upload_ad": {
+        "message": "google.ads.googleads.v23.common.DisplayUploadAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "display_url": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "expanded_dynamic_search_ad": {
+        "message": "google.ads.googleads.v23.common.ExpandedDynamicSearchAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "expanded_text_ad": {
+        "message": "google.ads.googleads.v23.common.ExpandedTextAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "final_app_urls": {
+        "message": "google.ads.googleads.v23.common.FinalAppUrl",
+        "presence": false,
+        "repeated": true
+      },
+      "final_mobile_urls": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      },
+      "final_url_suffix": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "final_urls": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": true
+      },
+      "hotel_ad": {
+        "message": "google.ads.googleads.v23.common.HotelAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "id": {
+        "presence": true,
+        "protobuf_type": 3,
+        "repeated": false
+      },
+      "image_ad": {
+        "message": "google.ads.googleads.v23.common.ImageAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "legacy_app_install_ad": {
+        "message": "google.ads.googleads.v23.common.LegacyAppInstallAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "legacy_responsive_display_ad": {
+        "message": "google.ads.googleads.v23.common.LegacyResponsiveDisplayAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "local_ad": {
+        "message": "google.ads.googleads.v23.common.LocalAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "name": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "resource_name": {
+        "presence": false,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "responsive_display_ad": {
+        "message": "google.ads.googleads.v23.common.ResponsiveDisplayAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "responsive_search_ad": {
+        "message": "google.ads.googleads.v23.common.ResponsiveSearchAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "shopping_comparison_listing_ad": {
+        "message": "google.ads.googleads.v23.common.ShoppingComparisonListingAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "shopping_product_ad": {
+        "message": "google.ads.googleads.v23.common.ShoppingProductAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "shopping_smart_ad": {
+        "message": "google.ads.googleads.v23.common.ShoppingSmartAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "smart_campaign_ad": {
+        "message": "google.ads.googleads.v23.common.SmartCampaignAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "synthetic_content_info": {
+        "message": "google.ads.googleads.v23.common.SyntheticContentInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "system_managed_resource_source": {
+        "enum": "google.ads.googleads.v23.enums.SystemManagedResourceSourceEnum.SystemManagedResourceSource",
+        "presence": false,
+        "repeated": false
+      },
+      "text_ad": {
+        "message": "google.ads.googleads.v23.common.TextAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "tracking_url_template": {
+        "presence": true,
+        "protobuf_type": 9,
+        "repeated": false
+      },
+      "travel_ad": {
+        "message": "google.ads.googleads.v23.common.TravelAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "type_": {
+        "enum": "google.ads.googleads.v23.enums.AdTypeEnum.AdType",
+        "presence": false,
+        "repeated": false
+      },
+      "url_collections": {
+        "message": "google.ads.googleads.v23.common.UrlCollection",
+        "presence": false,
+        "repeated": true
+      },
+      "url_custom_parameters": {
+        "message": "google.ads.googleads.v23.common.CustomParameter",
+        "presence": false,
+        "repeated": true
+      },
+      "video_ad": {
+        "message": "google.ads.googleads.v23.common.VideoAdInfo",
+        "presence": true,
+        "repeated": false
+      },
+      "video_responsive_ad": {
+        "message": "google.ads.googleads.v23.common.VideoResponsiveAdInfo",
+        "presence": true,
+        "repeated": false
+      }
+    }
+  },
+  "source": "Official google-ads 34.0.0 Python package protobuf descriptors"
+}

@@ -1,0 +1,372 @@
+{
+  "$defs": {
+    "AdConfiguration": {
+      "additionalProperties": false,
+      "properties": {
+        "ad_group": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ad Group"
+        },
+        "ad_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ad Id"
+        },
+        "ad_strength": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ad Strength"
+        },
+        "ad_type": {
+          "title": "Ad Type",
+          "type": "string"
+        },
+        "asset_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Group Id"
+        },
+        "campaign": {
+          "additionalProperties": true,
+          "title": "Campaign",
+          "type": "object"
+        },
+        "data_gaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Data Gaps",
+          "type": "array"
+        },
+        "descriptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Descriptions",
+          "type": "array"
+        },
+        "display_path": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Display Path",
+          "type": "array"
+        },
+        "entity_kind": {
+          "enum": [
+            "ad",
+            "asset_group"
+          ],
+          "title": "Entity Kind",
+          "type": "string"
+        },
+        "extensions": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Extensions",
+          "type": "array"
+        },
+        "final_mobile_urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Final Mobile Urls",
+          "type": "array"
+        },
+        "final_urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Final Urls",
+          "type": "array"
+        },
+        "headlines": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Headlines",
+          "type": "array"
+        },
+        "keywords": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Keywords",
+          "type": "array"
+        },
+        "negative_keywords": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Negative Keywords",
+          "type": "array"
+        },
+        "policy_approval": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Policy Approval"
+        },
+        "raw": {
+          "additionalProperties": true,
+          "title": "Raw",
+          "type": "object"
+        },
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Status"
+        },
+        "targeting": {
+          "additionalProperties": true,
+          "title": "Targeting",
+          "type": "object"
+        },
+        "tracking": {
+          "additionalProperties": true,
+          "title": "Tracking",
+          "type": "object"
+        },
+        "url_resolutions": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Url Resolutions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "record_id",
+        "entity_kind",
+        "ad_id",
+        "ad_type",
+        "status",
+        "policy_approval",
+        "ad_strength",
+        "headlines",
+        "descriptions",
+        "display_path",
+        "final_urls",
+        "final_mobile_urls",
+        "tracking",
+        "campaign",
+        "ad_group",
+        "keywords",
+        "negative_keywords",
+        "targeting",
+        "extensions",
+        "raw",
+        "data_gaps"
+      ],
+      "title": "AdConfiguration",
+      "type": "object"
+    },
+    "LandingPage": {
+      "additionalProperties": false,
+      "properties": {
+        "ad_count": {
+          "title": "Ad Count",
+          "type": "integer"
+        },
+        "ads": {
+          "items": {
+            "$ref": "#/$defs/AdConfiguration"
+          },
+          "title": "Ads",
+          "type": "array"
+        },
+        "landing_page": {
+          "title": "Landing Page",
+          "type": "string"
+        },
+        "normalized_key": {
+          "title": "Normalized Key",
+          "type": "string"
+        },
+        "original_urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Original Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "landing_page",
+        "original_urls",
+        "normalized_key",
+        "ad_count",
+        "ads"
+      ],
+      "title": "LandingPage",
+      "type": "object"
+    },
+    "Report": {
+      "additionalProperties": false,
+      "properties": {
+        "collection_inventory": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Collection Inventory",
+          "type": "object"
+        },
+        "customer_id": {
+          "title": "Customer Id",
+          "type": "string"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "landing_pages": {
+          "items": {
+            "$ref": "#/$defs/LandingPage"
+          },
+          "title": "Landing Pages",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "mock",
+            "google_ads"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "unmapped_ads": {
+          "items": {
+            "$ref": "#/$defs/UnmappedAd"
+          },
+          "title": "Unmapped Ads",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "customer_id",
+        "generated_at",
+        "source",
+        "landing_pages",
+        "unmapped_ads",
+        "warnings",
+        "collection_inventory"
+      ],
+      "title": "Report",
+      "type": "object"
+    },
+    "UnmappedAd": {
+      "additionalProperties": false,
+      "properties": {
+        "ad_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ad Id"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AdConfiguration"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_id",
+        "ad_id",
+        "reason",
+        "configuration"
+      ],
+      "title": "UnmappedAd",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "report": {
+      "$ref": "#/$defs/Report"
+    },
+    "report_id": {
+      "title": "Report Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "report_id",
+    "report"
+  ],
+  "title": "ReportCreated",
+  "type": "object"
+}

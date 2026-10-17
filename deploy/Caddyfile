@@ -1,0 +1,4 @@
+{$ADS_DOMAIN} {
+    reverse_proxy api:8000
+    # Request access logging is intentionally disabled: OAuth callback query strings contain codes.
+}

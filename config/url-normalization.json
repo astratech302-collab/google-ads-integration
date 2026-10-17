@@ -1,0 +1,10 @@
+{
+  "lowercase_scheme_host": true,
+  "remove_trailing_slash": true,
+  "strip_fragment": true,
+  "sort_query_parameters": true,
+  "ignored_parameter_prefixes": ["utm_"],
+  "ignored_parameters": ["gclid", "dclid", "gbraid", "wbraid", "msclkid", "fbclid", "gad_source", "gad_campaignid", "gclsrc", "_gl", "mc_cid", "mc_eid"],
+  "redirect_allowed_hosts": [],
+  "max_redirects": 5
+}

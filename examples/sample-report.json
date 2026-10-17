@@ -1,0 +1,3768 @@
+{
+  "collection_inventory": {
+    "ad_group": [
+      "ad_group.campaign",
+      "ad_group.id",
+      "ad_group.name",
+      "ad_group.resource_name",
+      "ad_group.status"
+    ],
+    "ad_group_ad": [
+      "ad_group_ad.ad",
+      "ad_group_ad.ad_group",
+      "ad_group_ad.ad_strength",
+      "ad_group_ad.policy_summary",
+      "ad_group_ad.resource_name",
+      "ad_group_ad.status"
+    ],
+    "ad_group_asset": [
+      "ad_group_asset.ad_group",
+      "ad_group_asset.asset",
+      "ad_group_asset.field_type",
+      "ad_group_asset.resource_name",
+      "ad_group_asset.status"
+    ],
+    "ad_group_bid_modifier": [],
+    "ad_group_criterion": [
+      "ad_group_criterion.ad_group",
+      "ad_group_criterion.criterion_id",
+      "ad_group_criterion.keyword",
+      "ad_group_criterion.negative",
+      "ad_group_criterion.resource_name",
+      "ad_group_criterion.status",
+      "ad_group_criterion.type"
+    ],
+    "asset": [
+      "asset.callout_asset",
+      "asset.final_urls",
+      "asset.id",
+      "asset.image_asset",
+      "asset.resource_name",
+      "asset.sitelink_asset",
+      "asset.structured_snippet_asset",
+      "asset.text_asset",
+      "asset.type"
+    ],
+    "asset_group": [
+      "asset_group.ad_strength",
+      "asset_group.campaign",
+      "asset_group.final_urls",
+      "asset_group.id",
+      "asset_group.name",
+      "asset_group.path1",
+      "asset_group.resource_name",
+      "asset_group.status"
+    ],
+    "asset_group_asset": [
+      "asset_group_asset.asset",
+      "asset_group_asset.asset_group",
+      "asset_group_asset.field_type",
+      "asset_group_asset.resource_name",
+      "asset_group_asset.status"
+    ],
+    "asset_group_listing_group_filter": [],
+    "asset_group_signal": [],
+    "bidding_strategy": [],
+    "campaign": [
+      "campaign.advertising_channel_type",
+      "campaign.bidding_strategy_type",
+      "campaign.campaign_budget",
+      "campaign.id",
+      "campaign.name",
+      "campaign.resource_name",
+      "campaign.status"
+    ],
+    "campaign_asset": [
+      "campaign_asset.asset",
+      "campaign_asset.campaign",
+      "campaign_asset.field_type",
+      "campaign_asset.resource_name",
+      "campaign_asset.status"
+    ],
+    "campaign_budget": [
+      "campaign_budget.amount_micros",
+      "campaign_budget.explicitly_shared",
+      "campaign_budget.id",
+      "campaign_budget.period",
+      "campaign_budget.resource_name"
+    ],
+    "campaign_criterion": [
+      "campaign_criterion.ad_schedule",
+      "campaign_criterion.bid_modifier",
+      "campaign_criterion.campaign",
+      "campaign_criterion.device",
+      "campaign_criterion.keyword",
+      "campaign_criterion.location",
+      "campaign_criterion.negative",
+      "campaign_criterion.resource_name",
+      "campaign_criterion.type"
+    ],
+    "campaign_shared_set": [
+      "campaign_shared_set.campaign",
+      "campaign_shared_set.resource_name",
+      "campaign_shared_set.shared_set",
+      "campaign_shared_set.status"
+    ],
+    "customer": [
+      "customer.currency_code",
+      "customer.descriptive_name",
+      "customer.id",
+      "customer.resource_name",
+      "customer.time_zone",
+      "customer.tracking_url_template"
+    ],
+    "customer_asset": [
+      "customer_asset.asset",
+      "customer_asset.field_type",
+      "customer_asset.resource_name",
+      "customer_asset.status"
+    ],
+    "customer_negative_criterion": [
+      "customer_negative_criterion.negative_keyword_list",
+      "customer_negative_criterion.resource_name",
+      "customer_negative_criterion.type"
+    ],
+    "shared_criterion": [
+      "shared_criterion.keyword",
+      "shared_criterion.resource_name",
+      "shared_criterion.shared_set"
+    ]
+  },
+  "customer_id": "1234567890",
+  "generated_at": "2026-10-17T12:00:00Z",
+  "landing_pages": [
+    {
+      "ad_count": 3,
+      "ads": [
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "id": "100",
+              "name": "Group 100",
+              "resource_name": "customers/1234567890/adGroups/100",
+              "status": "ENABLED"
+            },
+            "id": "100",
+            "name": "Group 100",
+            "status": "ENABLED"
+          },
+          "ad_id": "1",
+          "ad_strength": "GOOD",
+          "ad_type": "RESPONSIVE_SEARCH_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "bidding_strategy_resource": null,
+            "budget": "50",
+            "budget_configuration": {
+              "amount": "50",
+              "amount_micros": "50000000",
+              "explicitly_shared": false,
+              "id": "10",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/10"
+            },
+            "channel_type": "SEARCH",
+            "configuration": {
+              "advertising_channel_type": "SEARCH",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+              "campaign_budget": "customers/1234567890/campaignBudgets/10",
+              "id": "10",
+              "name": "Search Shirts",
+              "resource_name": "customers/1234567890/campaigns/10",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "10",
+            "name": "Search Shirts",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "final_mobile_urls: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD",
+            "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD"
+          ],
+          "descriptions": [
+            "Everyday comfort. Free shipping on qualifying orders."
+          ],
+          "display_path": [
+            "shirts",
+            "cotton"
+          ],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "final_urls": [
+                  "https://example.com/new"
+                ],
+                "id": "501",
+                "resource_name": "customers/1234567890/assets/501",
+                "sitelink_asset": {
+                  "description1": "Fresh styles",
+                  "description2": "Explore now",
+                  "link_text": "New Arrivals"
+                },
+                "type": "SITELINK"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/501",
+                "campaign": "customers/1234567890/campaigns/10",
+                "field_type": "SITELINK",
+                "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+                "status": "ENABLED"
+              },
+              "scope": "campaign_asset",
+              "type": "SITELINK"
+            },
+            {
+              "asset": {
+                "id": "503",
+                "resource_name": "customers/1234567890/assets/503",
+                "structured_snippet_asset": {
+                  "header": "Styles",
+                  "values": [
+                    "Casual",
+                    "Formal"
+                  ]
+                },
+                "type": "STRUCTURED_SNIPPET"
+              },
+              "association": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "asset": "customers/1234567890/assets/503",
+                "field_type": "STRUCTURED_SNIPPET",
+                "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+                "status": "ENABLED"
+              },
+              "scope": "ad_group_asset",
+              "type": "STRUCTURED_SNIPPET"
+            }
+          ],
+          "final_mobile_urls": [],
+          "final_urls": [
+            "https://Example.com/shirts/?utm_source=google&color=blue",
+            "https://example.com/sale"
+          ],
+          "headlines": [
+            "Soft Cotton Shirts",
+            "Shop New Colors"
+          ],
+          "keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "PHRASE",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "cotton shirts"
+            }
+          ],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "free"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "campaign",
+              "status": null,
+              "text": "jobs"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "match_type": "BROAD",
+              "scope": "shared_set",
+              "status": null,
+              "text": "used"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_url_suffix": "utm_campaign=shirts",
+              "final_urls": [
+                "https://Example.com/shirts/?utm_source=google&color=blue",
+                "https://example.com/sale"
+              ],
+              "id": "1",
+              "resource_name": "customers/1234567890/ads/1",
+              "responsive_search_ad": {
+                "descriptions": [
+                  {
+                    "text": "Everyday comfort. Free shipping on qualifying orders."
+                  }
+                ],
+                "headlines": [
+                  {
+                    "pinned_field": "HEADLINE_1",
+                    "text": "Soft Cotton Shirts"
+                  },
+                  {
+                    "text": "Shop New Colors"
+                  }
+                ],
+                "path1": "shirts",
+                "path2": "cotton"
+              },
+              "type": "RESPONSIVE_SEARCH_AD",
+              "url_custom_parameters": [
+                {
+                  "key": "campaign",
+                  "value": "shirts"
+                }
+              ]
+            },
+            "ad_group": "customers/1234567890/adGroups/100",
+            "ad_strength": "GOOD",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/100~1",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/100~1",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "criteria": [
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "1",
+                  "keyword": {
+                    "match_type": "PHRASE",
+                    "text": "cotton shirts"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "2",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "free"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "jobs"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                  "type": "KEYWORD"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "used"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                  "shared_set": "customers/1234567890/sharedSets/600"
+                },
+                "scope": "shared_set"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "locations": [
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": "utm_campaign=shirts",
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": "utm_campaign=shirts",
+                "tracking_url_template": null,
+                "url_custom_parameters": [
+                  {
+                    "key": "campaign",
+                    "value": "shirts"
+                  }
+                ]
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": [
+              {
+                "key": "campaign",
+                "value": "shirts"
+              }
+            ]
+          },
+          "url_resolutions": []
+        },
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "id": "100",
+              "name": "Group 100",
+              "resource_name": "customers/1234567890/adGroups/100",
+              "status": "ENABLED"
+            },
+            "id": "100",
+            "name": "Group 100",
+            "status": "ENABLED"
+          },
+          "ad_id": "8",
+          "ad_strength": "UNSPECIFIED",
+          "ad_type": "TEXT_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "bidding_strategy_resource": null,
+            "budget": "50",
+            "budget_configuration": {
+              "amount": "50",
+              "amount_micros": "50000000",
+              "explicitly_shared": false,
+              "id": "10",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/10"
+            },
+            "channel_type": "SEARCH",
+            "configuration": {
+              "advertising_channel_type": "SEARCH",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+              "campaign_budget": "customers/1234567890/campaignBudgets/10",
+              "id": "10",
+              "name": "Search Shirts",
+              "resource_name": "customers/1234567890/campaigns/10",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "10",
+            "name": "Search Shirts",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "ad_strength: unavailable, not set, or not applicable for TEXT_AD",
+            "display_path: unavailable, not set, or not applicable for TEXT_AD",
+            "final_mobile_urls: unavailable, not set, or not applicable for TEXT_AD",
+            "landing_pages: URL invalid or redirect resolution failed",
+            "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+            "tracking.final_url_suffix: unavailable, not set, or not applicable for TEXT_AD",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for TEXT_AD",
+            "tracking.url_custom_parameters: unavailable, not set, or not applicable for TEXT_AD"
+          ],
+          "descriptions": [
+            "Save today",
+            "Shop online"
+          ],
+          "display_path": [],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "final_urls": [
+                  "https://example.com/new"
+                ],
+                "id": "501",
+                "resource_name": "customers/1234567890/assets/501",
+                "sitelink_asset": {
+                  "description1": "Fresh styles",
+                  "description2": "Explore now",
+                  "link_text": "New Arrivals"
+                },
+                "type": "SITELINK"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/501",
+                "campaign": "customers/1234567890/campaigns/10",
+                "field_type": "SITELINK",
+                "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+                "status": "ENABLED"
+              },
+              "scope": "campaign_asset",
+              "type": "SITELINK"
+            },
+            {
+              "asset": {
+                "id": "503",
+                "resource_name": "customers/1234567890/assets/503",
+                "structured_snippet_asset": {
+                  "header": "Styles",
+                  "values": [
+                    "Casual",
+                    "Formal"
+                  ]
+                },
+                "type": "STRUCTURED_SNIPPET"
+              },
+              "association": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "asset": "customers/1234567890/assets/503",
+                "field_type": "STRUCTURED_SNIPPET",
+                "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+                "status": "ENABLED"
+              },
+              "scope": "ad_group_asset",
+              "type": "STRUCTURED_SNIPPET"
+            }
+          ],
+          "final_mobile_urls": [],
+          "final_urls": [
+            "https://example.com/sale",
+            "not a URL"
+          ],
+          "headlines": [
+            "Browse Sale"
+          ],
+          "keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "PHRASE",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "cotton shirts"
+            }
+          ],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "free"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "campaign",
+              "status": null,
+              "text": "jobs"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "match_type": "BROAD",
+              "scope": "shared_set",
+              "status": null,
+              "text": "used"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_urls": [
+                "not a URL",
+                "https://example.com/sale"
+              ],
+              "id": "8",
+              "resource_name": "customers/1234567890/ads/8",
+              "text_ad": {
+                "description1": "Save today",
+                "description2": "Shop online",
+                "headline": "Browse Sale"
+              },
+              "type": "TEXT_AD"
+            },
+            "ad_group": "customers/1234567890/adGroups/100",
+            "ad_strength": "UNSPECIFIED",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/100~8",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/100~8",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "criteria": [
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "1",
+                  "keyword": {
+                    "match_type": "PHRASE",
+                    "text": "cotton shirts"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "2",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "free"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "jobs"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                  "type": "KEYWORD"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "used"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                  "shared_set": "customers/1234567890/sharedSets/600"
+                },
+                "scope": "shared_set"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "locations": [
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": null,
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": null
+          },
+          "url_resolutions": [
+            {
+              "error": "URL invalid or redirect resolution failed",
+              "original_url": "not a URL"
+            }
+          ]
+        },
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/20",
+              "id": "200",
+              "name": "Group 200",
+              "resource_name": "customers/1234567890/adGroups/200",
+              "status": "ENABLED"
+            },
+            "id": "200",
+            "name": "Group 200",
+            "status": "ENABLED"
+          },
+          "ad_id": "3",
+          "ad_strength": "UNSPECIFIED",
+          "ad_type": "RESPONSIVE_DISPLAY_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MANUAL_CPC",
+            "bidding_strategy_resource": null,
+            "budget": "25",
+            "budget_configuration": {
+              "amount": "25",
+              "amount_micros": "25000000",
+              "explicitly_shared": false,
+              "id": "20",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/20"
+            },
+            "channel_type": "DISPLAY",
+            "configuration": {
+              "advertising_channel_type": "DISPLAY",
+              "bidding_strategy_type": "MANUAL_CPC",
+              "campaign_budget": "customers/1234567890/campaignBudgets/20",
+              "id": "20",
+              "name": "Display Remarketing",
+              "resource_name": "customers/1234567890/campaigns/20",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "20",
+            "name": "Display Remarketing",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "ad_strength: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "display_path: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.final_url_suffix: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.url_custom_parameters: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD"
+          ],
+          "descriptions": [
+            "Limited-time offers"
+          ],
+          "display_path": [],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "id": "504",
+                "image_asset": {
+                  "full_size": {
+                    "height_pixels": "628",
+                    "url": "https://cdn.example.com/shirt.jpg",
+                    "width_pixels": "1200"
+                  }
+                },
+                "resource_name": "customers/1234567890/assets/504",
+                "type": "IMAGE"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/504"
+              },
+              "scope": "creative",
+              "type": "IMAGE"
+            }
+          ],
+          "final_mobile_urls": [
+            "https://m.example.com/sale/?utm_source=google"
+          ],
+          "final_urls": [
+            "https://example.com/sale?fbclid=synthetic"
+          ],
+          "headlines": [
+            "Seasonal Sale",
+            "Save on shirts this season"
+          ],
+          "keywords": [],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_mobile_urls": [
+                "https://m.example.com/sale/?utm_source=google"
+              ],
+              "final_urls": [
+                "https://example.com/sale?fbclid=synthetic"
+              ],
+              "id": "3",
+              "resource_name": "customers/1234567890/ads/3",
+              "responsive_display_ad": {
+                "business_name": "Demo Store",
+                "descriptions": [
+                  {
+                    "text": "Limited-time offers"
+                  }
+                ],
+                "headlines": [
+                  {
+                    "text": "Seasonal Sale"
+                  }
+                ],
+                "long_headline": {
+                  "text": "Save on shirts this season"
+                },
+                "marketing_images": [
+                  {
+                    "asset": "customers/1234567890/assets/504"
+                  }
+                ]
+              },
+              "type": "RESPONSIVE_DISPLAY_AD"
+            },
+            "ad_group": "customers/1234567890/adGroups/200",
+            "ad_strength": "UNSPECIFIED",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/200~3",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/200~3",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [],
+            "criteria": [
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [],
+            "locations": [],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": null,
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": null
+          },
+          "url_resolutions": []
+        }
+      ],
+      "landing_page": "https://example.com/sale",
+      "normalized_key": "https://example.com/sale",
+      "original_urls": [
+        "https://example.com/sale",
+        "https://example.com/sale?fbclid=synthetic"
+      ]
+    },
+    {
+      "ad_count": 3,
+      "ads": [
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "id": "100",
+              "name": "Group 100",
+              "resource_name": "customers/1234567890/adGroups/100",
+              "status": "ENABLED"
+            },
+            "id": "100",
+            "name": "Group 100",
+            "status": "ENABLED"
+          },
+          "ad_id": "1",
+          "ad_strength": "GOOD",
+          "ad_type": "RESPONSIVE_SEARCH_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "bidding_strategy_resource": null,
+            "budget": "50",
+            "budget_configuration": {
+              "amount": "50",
+              "amount_micros": "50000000",
+              "explicitly_shared": false,
+              "id": "10",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/10"
+            },
+            "channel_type": "SEARCH",
+            "configuration": {
+              "advertising_channel_type": "SEARCH",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+              "campaign_budget": "customers/1234567890/campaignBudgets/10",
+              "id": "10",
+              "name": "Search Shirts",
+              "resource_name": "customers/1234567890/campaigns/10",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "10",
+            "name": "Search Shirts",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "final_mobile_urls: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD",
+            "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD"
+          ],
+          "descriptions": [
+            "Everyday comfort. Free shipping on qualifying orders."
+          ],
+          "display_path": [
+            "shirts",
+            "cotton"
+          ],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "final_urls": [
+                  "https://example.com/new"
+                ],
+                "id": "501",
+                "resource_name": "customers/1234567890/assets/501",
+                "sitelink_asset": {
+                  "description1": "Fresh styles",
+                  "description2": "Explore now",
+                  "link_text": "New Arrivals"
+                },
+                "type": "SITELINK"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/501",
+                "campaign": "customers/1234567890/campaigns/10",
+                "field_type": "SITELINK",
+                "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+                "status": "ENABLED"
+              },
+              "scope": "campaign_asset",
+              "type": "SITELINK"
+            },
+            {
+              "asset": {
+                "id": "503",
+                "resource_name": "customers/1234567890/assets/503",
+                "structured_snippet_asset": {
+                  "header": "Styles",
+                  "values": [
+                    "Casual",
+                    "Formal"
+                  ]
+                },
+                "type": "STRUCTURED_SNIPPET"
+              },
+              "association": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "asset": "customers/1234567890/assets/503",
+                "field_type": "STRUCTURED_SNIPPET",
+                "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+                "status": "ENABLED"
+              },
+              "scope": "ad_group_asset",
+              "type": "STRUCTURED_SNIPPET"
+            }
+          ],
+          "final_mobile_urls": [],
+          "final_urls": [
+            "https://Example.com/shirts/?utm_source=google&color=blue",
+            "https://example.com/sale"
+          ],
+          "headlines": [
+            "Soft Cotton Shirts",
+            "Shop New Colors"
+          ],
+          "keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "PHRASE",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "cotton shirts"
+            }
+          ],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "free"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "campaign",
+              "status": null,
+              "text": "jobs"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "match_type": "BROAD",
+              "scope": "shared_set",
+              "status": null,
+              "text": "used"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_url_suffix": "utm_campaign=shirts",
+              "final_urls": [
+                "https://Example.com/shirts/?utm_source=google&color=blue",
+                "https://example.com/sale"
+              ],
+              "id": "1",
+              "resource_name": "customers/1234567890/ads/1",
+              "responsive_search_ad": {
+                "descriptions": [
+                  {
+                    "text": "Everyday comfort. Free shipping on qualifying orders."
+                  }
+                ],
+                "headlines": [
+                  {
+                    "pinned_field": "HEADLINE_1",
+                    "text": "Soft Cotton Shirts"
+                  },
+                  {
+                    "text": "Shop New Colors"
+                  }
+                ],
+                "path1": "shirts",
+                "path2": "cotton"
+              },
+              "type": "RESPONSIVE_SEARCH_AD",
+              "url_custom_parameters": [
+                {
+                  "key": "campaign",
+                  "value": "shirts"
+                }
+              ]
+            },
+            "ad_group": "customers/1234567890/adGroups/100",
+            "ad_strength": "GOOD",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/100~1",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/100~1",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "criteria": [
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "1",
+                  "keyword": {
+                    "match_type": "PHRASE",
+                    "text": "cotton shirts"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "2",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "free"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "jobs"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                  "type": "KEYWORD"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "used"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                  "shared_set": "customers/1234567890/sharedSets/600"
+                },
+                "scope": "shared_set"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "locations": [
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": "utm_campaign=shirts",
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": "utm_campaign=shirts",
+                "tracking_url_template": null,
+                "url_custom_parameters": [
+                  {
+                    "key": "campaign",
+                    "value": "shirts"
+                  }
+                ]
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": [
+              {
+                "key": "campaign",
+                "value": "shirts"
+              }
+            ]
+          },
+          "url_resolutions": []
+        },
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "id": "100",
+              "name": "Group 100",
+              "resource_name": "customers/1234567890/adGroups/100",
+              "status": "ENABLED"
+            },
+            "id": "100",
+            "name": "Group 100",
+            "status": "ENABLED"
+          },
+          "ad_id": "2",
+          "ad_strength": "GOOD",
+          "ad_type": "RESPONSIVE_SEARCH_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "bidding_strategy_resource": null,
+            "budget": "50",
+            "budget_configuration": {
+              "amount": "50",
+              "amount_micros": "50000000",
+              "explicitly_shared": false,
+              "id": "10",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/10"
+            },
+            "channel_type": "SEARCH",
+            "configuration": {
+              "advertising_channel_type": "SEARCH",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+              "campaign_budget": "customers/1234567890/campaignBudgets/10",
+              "id": "10",
+              "name": "Search Shirts",
+              "resource_name": "customers/1234567890/campaigns/10",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "10",
+            "name": "Search Shirts",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "final_mobile_urls: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD",
+            "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+            "tracking.final_url_suffix: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD",
+            "tracking.url_custom_parameters: unavailable, not set, or not applicable for RESPONSIVE_SEARCH_AD"
+          ],
+          "descriptions": [
+            "Browse our latest collection."
+          ],
+          "display_path": [
+            "shirts"
+          ],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "final_urls": [
+                  "https://example.com/new"
+                ],
+                "id": "501",
+                "resource_name": "customers/1234567890/assets/501",
+                "sitelink_asset": {
+                  "description1": "Fresh styles",
+                  "description2": "Explore now",
+                  "link_text": "New Arrivals"
+                },
+                "type": "SITELINK"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/501",
+                "campaign": "customers/1234567890/campaigns/10",
+                "field_type": "SITELINK",
+                "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+                "status": "ENABLED"
+              },
+              "scope": "campaign_asset",
+              "type": "SITELINK"
+            },
+            {
+              "asset": {
+                "id": "503",
+                "resource_name": "customers/1234567890/assets/503",
+                "structured_snippet_asset": {
+                  "header": "Styles",
+                  "values": [
+                    "Casual",
+                    "Formal"
+                  ]
+                },
+                "type": "STRUCTURED_SNIPPET"
+              },
+              "association": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "asset": "customers/1234567890/assets/503",
+                "field_type": "STRUCTURED_SNIPPET",
+                "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+                "status": "ENABLED"
+              },
+              "scope": "ad_group_asset",
+              "type": "STRUCTURED_SNIPPET"
+            }
+          ],
+          "final_mobile_urls": [],
+          "final_urls": [
+            "https://example.com/shirts/?color=blue&utm_medium=cpc",
+            "https://example.com/shirts?color=blue&gclid=synthetic"
+          ],
+          "headlines": [
+            "Your New Favorite Shirt"
+          ],
+          "keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "PHRASE",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "cotton shirts"
+            }
+          ],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "ad_group",
+              "status": "ENABLED",
+              "text": "free"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "match_type": "BROAD",
+              "scope": "campaign",
+              "status": null,
+              "text": "jobs"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "match_type": "BROAD",
+              "scope": "shared_set",
+              "status": null,
+              "text": "used"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_urls": [
+                "https://example.com/shirts?color=blue&gclid=synthetic",
+                "https://example.com/shirts/?color=blue&utm_medium=cpc"
+              ],
+              "id": "2",
+              "resource_name": "customers/1234567890/ads/2",
+              "responsive_search_ad": {
+                "descriptions": [
+                  {
+                    "text": "Browse our latest collection."
+                  }
+                ],
+                "headlines": [
+                  {
+                    "text": "Your New Favorite Shirt"
+                  }
+                ],
+                "path1": "shirts"
+              },
+              "type": "RESPONSIVE_SEARCH_AD"
+            },
+            "ad_group": "customers/1234567890/adGroups/100",
+            "ad_strength": "GOOD",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/100~2",
+            "status": "PAUSED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/100~2",
+          "status": "PAUSED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "criteria": [
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "1",
+                  "keyword": {
+                    "match_type": "PHRASE",
+                    "text": "cotton shirts"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_group": "customers/1234567890/adGroups/100",
+                  "criterion_id": "2",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "free"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                  "status": "ENABLED",
+                  "type": "KEYWORD"
+                },
+                "scope": "ad_group"
+              },
+              {
+                "configuration": {
+                  "ad_schedule": {
+                    "day_of_week": "MONDAY",
+                    "end_hour": 18,
+                    "end_minute": "ZERO",
+                    "start_hour": 9,
+                    "start_minute": "ZERO"
+                  },
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                  "type": "AD_SCHEDULE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "jobs"
+                  },
+                  "negative": true,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                  "type": "KEYWORD"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "used"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                  "shared_set": "customers/1234567890/sharedSets/600"
+                },
+                "scope": "shared_set"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [
+              {
+                "configuration": {
+                  "bid_modifier": 1.1,
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "device": {
+                    "type": "MOBILE"
+                  },
+                  "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                  "type": "DEVICE"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "locations": [
+              {
+                "configuration": {
+                  "campaign": "customers/1234567890/campaigns/10",
+                  "location": {
+                    "geo_target_constant": "geoTargetConstants/2840"
+                  },
+                  "negative": false,
+                  "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                  "type": "LOCATION"
+                },
+                "scope": "campaign"
+              }
+            ],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": null,
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": null
+          },
+          "url_resolutions": []
+        },
+        {
+          "ad_group": null,
+          "ad_id": null,
+          "ad_strength": "EXCELLENT",
+          "ad_type": "PERFORMANCE_MAX_ASSET_GROUP",
+          "asset_group_id": "300",
+          "campaign": {
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "bidding_strategy_resource": null,
+            "budget": "100",
+            "budget_configuration": {
+              "amount": "100",
+              "amount_micros": "100000000",
+              "explicitly_shared": false,
+              "id": "30",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/30"
+            },
+            "channel_type": "PERFORMANCE_MAX",
+            "configuration": {
+              "advertising_channel_type": "PERFORMANCE_MAX",
+              "bidding_strategy_type": "MAXIMIZE_CONVERSION_VALUE",
+              "campaign_budget": "customers/1234567890/campaignBudgets/30",
+              "id": "30",
+              "name": "Performance Max Store",
+              "resource_name": "customers/1234567890/campaigns/30",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "30",
+            "name": "Performance Max Store",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "ad_group: not applicable to Performance Max",
+            "ad_id: asset groups are not standard ads",
+            "final_mobile_urls: unavailable, not set, or not applicable for PERFORMANCE_MAX_ASSET_GROUP",
+            "keywords: positive keywords unavailable for Performance Max; signals are not keyword targeting",
+            "landing_pages: URL expansion and product-feed destinations may exceed asset_group.final_urls",
+            "policy_approval: no ad-level policy summary on asset groups; inspect linked asset policies",
+            "policy_approval: unavailable, not set, or not applicable for PERFORMANCE_MAX_ASSET_GROUP",
+            "tracking.final_url_suffix: unavailable, not set, or not applicable for PERFORMANCE_MAX_ASSET_GROUP",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for PERFORMANCE_MAX_ASSET_GROUP",
+            "tracking.url_custom_parameters: unavailable, not set, or not applicable for PERFORMANCE_MAX_ASSET_GROUP"
+          ],
+          "descriptions": [
+            "Quality fabrics, fresh colors."
+          ],
+          "display_path": [
+            "shirts"
+          ],
+          "entity_kind": "asset_group",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "id": "504",
+                "image_asset": {
+                  "full_size": {
+                    "height_pixels": "628",
+                    "url": "https://cdn.example.com/shirt.jpg",
+                    "width_pixels": "1200"
+                  }
+                },
+                "resource_name": "customers/1234567890/assets/504",
+                "type": "IMAGE"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/504",
+                "asset_group": "customers/1234567890/assetGroups/300",
+                "field_type": "MARKETING_IMAGE",
+                "resource_name": "customers/1234567890/assetGroupAssets/300~504~MARKETING_IMAGE",
+                "status": "ENABLED"
+              },
+              "scope": "asset_group_asset",
+              "type": "MARKETING_IMAGE"
+            },
+            {
+              "asset": {
+                "id": "505",
+                "resource_name": "customers/1234567890/assets/505",
+                "text_asset": {
+                  "text": "Find Your Everyday Shirt"
+                },
+                "type": "TEXT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/505",
+                "asset_group": "customers/1234567890/assetGroups/300",
+                "field_type": "HEADLINE",
+                "resource_name": "customers/1234567890/assetGroupAssets/300~505~HEADLINE",
+                "status": "ENABLED"
+              },
+              "scope": "asset_group_asset",
+              "type": "HEADLINE"
+            },
+            {
+              "asset": {
+                "id": "506",
+                "resource_name": "customers/1234567890/assets/506",
+                "text_asset": {
+                  "text": "Quality fabrics, fresh colors."
+                },
+                "type": "TEXT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/506",
+                "asset_group": "customers/1234567890/assetGroups/300",
+                "field_type": "DESCRIPTION",
+                "resource_name": "customers/1234567890/assetGroupAssets/300~506~DESCRIPTION",
+                "status": "ENABLED"
+              },
+              "scope": "asset_group_asset",
+              "type": "DESCRIPTION"
+            }
+          ],
+          "final_mobile_urls": [],
+          "final_urls": [
+            "https://example.com/shirts/?color=blue&utm_campaign=pmax"
+          ],
+          "headlines": [
+            "Find Your Everyday Shirt"
+          ],
+          "keywords": [],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            }
+          ],
+          "policy_approval": null,
+          "raw": {
+            "ad_strength": "EXCELLENT",
+            "campaign": "customers/1234567890/campaigns/30",
+            "final_urls": [
+              "https://example.com/shirts/?color=blue&utm_campaign=pmax"
+            ],
+            "id": "300",
+            "name": "Shirts Asset Group",
+            "path1": "shirts",
+            "resource_name": "customers/1234567890/assetGroups/300",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/assetGroups/300",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [],
+            "asset_group_signals": [],
+            "criteria": [
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [],
+            "listing_group_filters": [],
+            "locations": [],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": null,
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": null
+          },
+          "url_resolutions": []
+        }
+      ],
+      "landing_page": "https://Example.com/shirts/?utm_source=google&color=blue",
+      "normalized_key": "https://example.com/shirts?color=blue",
+      "original_urls": [
+        "https://Example.com/shirts/?utm_source=google&color=blue",
+        "https://example.com/shirts/?color=blue&utm_campaign=pmax",
+        "https://example.com/shirts/?color=blue&utm_medium=cpc",
+        "https://example.com/shirts?color=blue&gclid=synthetic"
+      ]
+    },
+    {
+      "ad_count": 1,
+      "ads": [
+        {
+          "ad_group": {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/20",
+              "id": "200",
+              "name": "Group 200",
+              "resource_name": "customers/1234567890/adGroups/200",
+              "status": "ENABLED"
+            },
+            "id": "200",
+            "name": "Group 200",
+            "status": "ENABLED"
+          },
+          "ad_id": "3",
+          "ad_strength": "UNSPECIFIED",
+          "ad_type": "RESPONSIVE_DISPLAY_AD",
+          "asset_group_id": null,
+          "campaign": {
+            "bidding": "MANUAL_CPC",
+            "bidding_strategy_resource": null,
+            "budget": "25",
+            "budget_configuration": {
+              "amount": "25",
+              "amount_micros": "25000000",
+              "explicitly_shared": false,
+              "id": "20",
+              "period": "DAILY",
+              "resource_name": "customers/1234567890/campaignBudgets/20"
+            },
+            "channel_type": "DISPLAY",
+            "configuration": {
+              "advertising_channel_type": "DISPLAY",
+              "bidding_strategy_type": "MANUAL_CPC",
+              "campaign_budget": "customers/1234567890/campaignBudgets/20",
+              "id": "20",
+              "name": "Display Remarketing",
+              "resource_name": "customers/1234567890/campaigns/20",
+              "status": "ENABLED"
+            },
+            "currency_code": "USD",
+            "id": "20",
+            "name": "Display Remarketing",
+            "status": "ENABLED"
+          },
+          "data_gaps": [
+            "ad_strength: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "display_path: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.final_url_suffix: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.tracking_url_template: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD",
+            "tracking.url_custom_parameters: unavailable, not set, or not applicable for RESPONSIVE_DISPLAY_AD"
+          ],
+          "descriptions": [
+            "Limited-time offers"
+          ],
+          "display_path": [],
+          "entity_kind": "ad",
+          "extensions": [
+            {
+              "asset": {
+                "callout_asset": {
+                  "callout_text": "Free Returns"
+                },
+                "id": "502",
+                "resource_name": "customers/1234567890/assets/502",
+                "type": "CALLOUT"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/502",
+                "field_type": "CALLOUT",
+                "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+                "status": "ENABLED"
+              },
+              "scope": "customer_asset",
+              "type": "CALLOUT"
+            },
+            {
+              "asset": {
+                "id": "504",
+                "image_asset": {
+                  "full_size": {
+                    "height_pixels": "628",
+                    "url": "https://cdn.example.com/shirt.jpg",
+                    "width_pixels": "1200"
+                  }
+                },
+                "resource_name": "customers/1234567890/assets/504",
+                "type": "IMAGE"
+              },
+              "association": {
+                "asset": "customers/1234567890/assets/504"
+              },
+              "scope": "creative",
+              "type": "IMAGE"
+            }
+          ],
+          "final_mobile_urls": [
+            "https://m.example.com/sale/?utm_source=google"
+          ],
+          "final_urls": [
+            "https://example.com/sale?fbclid=synthetic"
+          ],
+          "headlines": [
+            "Seasonal Sale",
+            "Save on shirts this season"
+          ],
+          "keywords": [],
+          "negative_keywords": [
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "match_type": "BROAD",
+              "scope": "customer",
+              "status": null,
+              "text": "counterfeit"
+            }
+          ],
+          "policy_approval": "APPROVED",
+          "raw": {
+            "ad": {
+              "final_mobile_urls": [
+                "https://m.example.com/sale/?utm_source=google"
+              ],
+              "final_urls": [
+                "https://example.com/sale?fbclid=synthetic"
+              ],
+              "id": "3",
+              "resource_name": "customers/1234567890/ads/3",
+              "responsive_display_ad": {
+                "business_name": "Demo Store",
+                "descriptions": [
+                  {
+                    "text": "Limited-time offers"
+                  }
+                ],
+                "headlines": [
+                  {
+                    "text": "Seasonal Sale"
+                  }
+                ],
+                "long_headline": {
+                  "text": "Save on shirts this season"
+                },
+                "marketing_images": [
+                  {
+                    "asset": "customers/1234567890/assets/504"
+                  }
+                ]
+              },
+              "type": "RESPONSIVE_DISPLAY_AD"
+            },
+            "ad_group": "customers/1234567890/adGroups/200",
+            "ad_strength": "UNSPECIFIED",
+            "policy_summary": {
+              "approval_status": "APPROVED"
+            },
+            "resource_name": "customers/1234567890/adGroupAds/200~3",
+            "status": "ENABLED"
+          },
+          "record_id": "customers/1234567890/adGroupAds/200~3",
+          "status": "ENABLED",
+          "targeting": {
+            "ad_group_bid_modifiers": [],
+            "ad_schedule": [],
+            "criteria": [
+              {
+                "configuration": {
+                  "keyword": {
+                    "match_type": "BROAD",
+                    "text": "counterfeit"
+                  },
+                  "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "scope": "customer"
+              },
+              {
+                "configuration": {
+                  "negative_keyword_list": {
+                    "shared_set": "customers/1234567890/sharedSets/701"
+                  },
+                  "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                  "type": "NEGATIVE_KEYWORD_LIST"
+                },
+                "scope": "customer"
+              }
+            ],
+            "devices": [],
+            "locations": [],
+            "time_zone": "America/New_York"
+          },
+          "tracking": {
+            "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+            "final_url_suffix": null,
+            "resolution_enabled": false,
+            "scopes": {
+              "ad": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "ad_group": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "campaign": {
+                "final_url_suffix": null,
+                "tracking_url_template": null,
+                "url_custom_parameters": null
+              },
+              "customer": {
+                "final_url_suffix": null,
+                "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+                "url_custom_parameters": null
+              }
+            },
+            "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+            "tracking_url_template": null,
+            "url_custom_parameters": null
+          },
+          "url_resolutions": []
+        }
+      ],
+      "landing_page": "https://m.example.com/sale/?utm_source=google",
+      "normalized_key": "https://m.example.com/sale",
+      "original_urls": [
+        "https://m.example.com/sale/?utm_source=google"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "source": "mock",
+  "unmapped_ads": [
+    {
+      "ad_id": "5",
+      "configuration": {
+        "ad_group": {
+          "configuration": {
+            "campaign": "customers/1234567890/campaigns/10",
+            "id": "100",
+            "name": "Group 100",
+            "resource_name": "customers/1234567890/adGroups/100",
+            "status": "ENABLED"
+          },
+          "id": "100",
+          "name": "Group 100",
+          "status": "ENABLED"
+        },
+        "ad_id": "5",
+        "ad_strength": "UNSPECIFIED",
+        "ad_type": "EXPANDED_DYNAMIC_SEARCH_AD",
+        "asset_group_id": null,
+        "campaign": {
+          "bidding": "MAXIMIZE_CONVERSIONS",
+          "bidding_strategy_resource": null,
+          "budget": "50",
+          "budget_configuration": {
+            "amount": "50",
+            "amount_micros": "50000000",
+            "explicitly_shared": false,
+            "id": "10",
+            "period": "DAILY",
+            "resource_name": "customers/1234567890/campaignBudgets/10"
+          },
+          "channel_type": "SEARCH",
+          "configuration": {
+            "advertising_channel_type": "SEARCH",
+            "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+            "campaign_budget": "customers/1234567890/campaignBudgets/10",
+            "id": "10",
+            "name": "Search Shirts",
+            "resource_name": "customers/1234567890/campaigns/10",
+            "status": "ENABLED"
+          },
+          "currency_code": "USD",
+          "id": "10",
+          "name": "Search Shirts",
+          "status": "ENABLED"
+        },
+        "data_gaps": [
+          "ad_strength: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "display_path: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "final_mobile_urls: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "final_urls: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "headlines/final_urls: generated at serving time for Dynamic Search Ads",
+          "headlines: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "landing_pages: No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+          "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+          "tracking.final_url_suffix: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "tracking.tracking_url_template: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD",
+          "tracking.url_custom_parameters: unavailable, not set, or not applicable for EXPANDED_DYNAMIC_SEARCH_AD"
+        ],
+        "descriptions": [
+          "Explore the collection",
+          "Find your fit"
+        ],
+        "display_path": [],
+        "entity_kind": "ad",
+        "extensions": [
+          {
+            "asset": {
+              "callout_asset": {
+                "callout_text": "Free Returns"
+              },
+              "id": "502",
+              "resource_name": "customers/1234567890/assets/502",
+              "type": "CALLOUT"
+            },
+            "association": {
+              "asset": "customers/1234567890/assets/502",
+              "field_type": "CALLOUT",
+              "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+              "status": "ENABLED"
+            },
+            "scope": "customer_asset",
+            "type": "CALLOUT"
+          },
+          {
+            "asset": {
+              "final_urls": [
+                "https://example.com/new"
+              ],
+              "id": "501",
+              "resource_name": "customers/1234567890/assets/501",
+              "sitelink_asset": {
+                "description1": "Fresh styles",
+                "description2": "Explore now",
+                "link_text": "New Arrivals"
+              },
+              "type": "SITELINK"
+            },
+            "association": {
+              "asset": "customers/1234567890/assets/501",
+              "campaign": "customers/1234567890/campaigns/10",
+              "field_type": "SITELINK",
+              "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+              "status": "ENABLED"
+            },
+            "scope": "campaign_asset",
+            "type": "SITELINK"
+          },
+          {
+            "asset": {
+              "id": "503",
+              "resource_name": "customers/1234567890/assets/503",
+              "structured_snippet_asset": {
+                "header": "Styles",
+                "values": [
+                  "Casual",
+                  "Formal"
+                ]
+              },
+              "type": "STRUCTURED_SNIPPET"
+            },
+            "association": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "asset": "customers/1234567890/assets/503",
+              "field_type": "STRUCTURED_SNIPPET",
+              "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+              "status": "ENABLED"
+            },
+            "scope": "ad_group_asset",
+            "type": "STRUCTURED_SNIPPET"
+          }
+        ],
+        "final_mobile_urls": [],
+        "final_urls": [],
+        "headlines": [],
+        "keywords": [
+          {
+            "configuration": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "1",
+              "keyword": {
+                "match_type": "PHRASE",
+                "text": "cotton shirts"
+              },
+              "negative": false,
+              "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+              "status": "ENABLED",
+              "type": "KEYWORD"
+            },
+            "match_type": "PHRASE",
+            "scope": "ad_group",
+            "status": "ENABLED",
+            "text": "cotton shirts"
+          }
+        ],
+        "negative_keywords": [
+          {
+            "configuration": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "2",
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "free"
+              },
+              "negative": true,
+              "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+              "status": "ENABLED",
+              "type": "KEYWORD"
+            },
+            "match_type": "BROAD",
+            "scope": "ad_group",
+            "status": "ENABLED",
+            "text": "free"
+          },
+          {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "jobs"
+              },
+              "negative": true,
+              "resource_name": "customers/1234567890/campaignCriteria/10~4",
+              "type": "KEYWORD"
+            },
+            "match_type": "BROAD",
+            "scope": "campaign",
+            "status": null,
+            "text": "jobs"
+          },
+          {
+            "configuration": {
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "counterfeit"
+              },
+              "resource_name": "customers/1234567890/sharedCriteria/701~702",
+              "shared_set": "customers/1234567890/sharedSets/701"
+            },
+            "match_type": "BROAD",
+            "scope": "customer",
+            "status": null,
+            "text": "counterfeit"
+          },
+          {
+            "configuration": {
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "used"
+              },
+              "resource_name": "customers/1234567890/sharedCriteria/600~601",
+              "shared_set": "customers/1234567890/sharedSets/600"
+            },
+            "match_type": "BROAD",
+            "scope": "shared_set",
+            "status": null,
+            "text": "used"
+          }
+        ],
+        "policy_approval": "APPROVED",
+        "raw": {
+          "ad": {
+            "expanded_dynamic_search_ad": {
+              "description": "Explore the collection",
+              "description2": "Find your fit"
+            },
+            "final_urls": [],
+            "id": "5",
+            "resource_name": "customers/1234567890/ads/5",
+            "type": "EXPANDED_DYNAMIC_SEARCH_AD"
+          },
+          "ad_group": "customers/1234567890/adGroups/100",
+          "ad_strength": "UNSPECIFIED",
+          "policy_summary": {
+            "approval_status": "APPROVED"
+          },
+          "resource_name": "customers/1234567890/adGroupAds/100~5",
+          "status": "ENABLED"
+        },
+        "record_id": "customers/1234567890/adGroupAds/100~5",
+        "status": "ENABLED",
+        "targeting": {
+          "ad_group_bid_modifiers": [],
+          "ad_schedule": [
+            {
+              "configuration": {
+                "ad_schedule": {
+                  "day_of_week": "MONDAY",
+                  "end_hour": 18,
+                  "end_minute": "ZERO",
+                  "start_hour": 9,
+                  "start_minute": "ZERO"
+                },
+                "campaign": "customers/1234567890/campaigns/10",
+                "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                "type": "AD_SCHEDULE"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "criteria": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "scope": "ad_group"
+            },
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "scope": "ad_group"
+            },
+            {
+              "configuration": {
+                "ad_schedule": {
+                  "day_of_week": "MONDAY",
+                  "end_hour": 18,
+                  "end_minute": "ZERO",
+                  "start_hour": 9,
+                  "start_minute": "ZERO"
+                },
+                "campaign": "customers/1234567890/campaigns/10",
+                "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                "type": "AD_SCHEDULE"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "bid_modifier": 1.1,
+                "campaign": "customers/1234567890/campaigns/10",
+                "device": {
+                  "type": "MOBILE"
+                },
+                "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                "type": "DEVICE"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "location": {
+                  "geo_target_constant": "geoTargetConstants/2840"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                "type": "LOCATION"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "scope": "customer"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "scope": "shared_set"
+            },
+            {
+              "configuration": {
+                "negative_keyword_list": {
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                "type": "NEGATIVE_KEYWORD_LIST"
+              },
+              "scope": "customer"
+            }
+          ],
+          "devices": [
+            {
+              "configuration": {
+                "bid_modifier": 1.1,
+                "campaign": "customers/1234567890/campaigns/10",
+                "device": {
+                  "type": "MOBILE"
+                },
+                "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                "type": "DEVICE"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "locations": [
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "location": {
+                  "geo_target_constant": "geoTargetConstants/2840"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                "type": "LOCATION"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "time_zone": "America/New_York"
+        },
+        "tracking": {
+          "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+          "final_url_suffix": null,
+          "resolution_enabled": false,
+          "scopes": {
+            "ad": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "ad_group": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "campaign": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "customer": {
+              "final_url_suffix": null,
+              "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+              "url_custom_parameters": null
+            }
+          },
+          "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+          "tracking_url_template": null,
+          "url_custom_parameters": null
+        },
+        "url_resolutions": []
+      },
+      "reason": "No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+      "record_id": "customers/1234567890/adGroupAds/100~5"
+    },
+    {
+      "ad_id": "6",
+      "configuration": {
+        "ad_group": {
+          "configuration": {
+            "campaign": "customers/1234567890/campaigns/10",
+            "id": "100",
+            "name": "Group 100",
+            "resource_name": "customers/1234567890/adGroups/100",
+            "status": "ENABLED"
+          },
+          "id": "100",
+          "name": "Group 100",
+          "status": "ENABLED"
+        },
+        "ad_id": "6",
+        "ad_strength": "UNSPECIFIED",
+        "ad_type": "CALL_AD",
+        "asset_group_id": null,
+        "campaign": {
+          "bidding": "MAXIMIZE_CONVERSIONS",
+          "bidding_strategy_resource": null,
+          "budget": "50",
+          "budget_configuration": {
+            "amount": "50",
+            "amount_micros": "50000000",
+            "explicitly_shared": false,
+            "id": "10",
+            "period": "DAILY",
+            "resource_name": "customers/1234567890/campaignBudgets/10"
+          },
+          "channel_type": "SEARCH",
+          "configuration": {
+            "advertising_channel_type": "SEARCH",
+            "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+            "campaign_budget": "customers/1234567890/campaignBudgets/10",
+            "id": "10",
+            "name": "Search Shirts",
+            "resource_name": "customers/1234567890/campaigns/10",
+            "status": "ENABLED"
+          },
+          "currency_code": "USD",
+          "id": "10",
+          "name": "Search Shirts",
+          "status": "ENABLED"
+        },
+        "data_gaps": [
+          "ad_strength: unavailable, not set, or not applicable for CALL_AD",
+          "creative: CALL_AD has no creative payload in the v23 Ad schema",
+          "descriptions: unavailable, not set, or not applicable for CALL_AD",
+          "display_path: unavailable, not set, or not applicable for CALL_AD",
+          "final_mobile_urls: unavailable, not set, or not applicable for CALL_AD",
+          "final_urls: unavailable, not set, or not applicable for CALL_AD",
+          "headlines: unavailable, not set, or not applicable for CALL_AD",
+          "landing_pages: No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+          "targeting.locations.names: geo target resource IDs retained; human-readable geo lookup not collected",
+          "tracking.final_url_suffix: unavailable, not set, or not applicable for CALL_AD",
+          "tracking.tracking_url_template: unavailable, not set, or not applicable for CALL_AD",
+          "tracking.url_custom_parameters: unavailable, not set, or not applicable for CALL_AD"
+        ],
+        "descriptions": [],
+        "display_path": [],
+        "entity_kind": "ad",
+        "extensions": [
+          {
+            "asset": {
+              "callout_asset": {
+                "callout_text": "Free Returns"
+              },
+              "id": "502",
+              "resource_name": "customers/1234567890/assets/502",
+              "type": "CALLOUT"
+            },
+            "association": {
+              "asset": "customers/1234567890/assets/502",
+              "field_type": "CALLOUT",
+              "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+              "status": "ENABLED"
+            },
+            "scope": "customer_asset",
+            "type": "CALLOUT"
+          },
+          {
+            "asset": {
+              "final_urls": [
+                "https://example.com/new"
+              ],
+              "id": "501",
+              "resource_name": "customers/1234567890/assets/501",
+              "sitelink_asset": {
+                "description1": "Fresh styles",
+                "description2": "Explore now",
+                "link_text": "New Arrivals"
+              },
+              "type": "SITELINK"
+            },
+            "association": {
+              "asset": "customers/1234567890/assets/501",
+              "campaign": "customers/1234567890/campaigns/10",
+              "field_type": "SITELINK",
+              "resource_name": "customers/1234567890/campaignAssets/10~501~SITELINK",
+              "status": "ENABLED"
+            },
+            "scope": "campaign_asset",
+            "type": "SITELINK"
+          },
+          {
+            "asset": {
+              "id": "503",
+              "resource_name": "customers/1234567890/assets/503",
+              "structured_snippet_asset": {
+                "header": "Styles",
+                "values": [
+                  "Casual",
+                  "Formal"
+                ]
+              },
+              "type": "STRUCTURED_SNIPPET"
+            },
+            "association": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "asset": "customers/1234567890/assets/503",
+              "field_type": "STRUCTURED_SNIPPET",
+              "resource_name": "customers/1234567890/adGroupAssets/100~503~STRUCTURED_SNIPPET",
+              "status": "ENABLED"
+            },
+            "scope": "ad_group_asset",
+            "type": "STRUCTURED_SNIPPET"
+          }
+        ],
+        "final_mobile_urls": [],
+        "final_urls": [],
+        "headlines": [],
+        "keywords": [
+          {
+            "configuration": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "1",
+              "keyword": {
+                "match_type": "PHRASE",
+                "text": "cotton shirts"
+              },
+              "negative": false,
+              "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+              "status": "ENABLED",
+              "type": "KEYWORD"
+            },
+            "match_type": "PHRASE",
+            "scope": "ad_group",
+            "status": "ENABLED",
+            "text": "cotton shirts"
+          }
+        ],
+        "negative_keywords": [
+          {
+            "configuration": {
+              "ad_group": "customers/1234567890/adGroups/100",
+              "criterion_id": "2",
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "free"
+              },
+              "negative": true,
+              "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+              "status": "ENABLED",
+              "type": "KEYWORD"
+            },
+            "match_type": "BROAD",
+            "scope": "ad_group",
+            "status": "ENABLED",
+            "text": "free"
+          },
+          {
+            "configuration": {
+              "campaign": "customers/1234567890/campaigns/10",
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "jobs"
+              },
+              "negative": true,
+              "resource_name": "customers/1234567890/campaignCriteria/10~4",
+              "type": "KEYWORD"
+            },
+            "match_type": "BROAD",
+            "scope": "campaign",
+            "status": null,
+            "text": "jobs"
+          },
+          {
+            "configuration": {
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "counterfeit"
+              },
+              "resource_name": "customers/1234567890/sharedCriteria/701~702",
+              "shared_set": "customers/1234567890/sharedSets/701"
+            },
+            "match_type": "BROAD",
+            "scope": "customer",
+            "status": null,
+            "text": "counterfeit"
+          },
+          {
+            "configuration": {
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "used"
+              },
+              "resource_name": "customers/1234567890/sharedCriteria/600~601",
+              "shared_set": "customers/1234567890/sharedSets/600"
+            },
+            "match_type": "BROAD",
+            "scope": "shared_set",
+            "status": null,
+            "text": "used"
+          }
+        ],
+        "policy_approval": "APPROVED",
+        "raw": {
+          "ad": {
+            "final_urls": [],
+            "id": "6",
+            "resource_name": "customers/1234567890/ads/6",
+            "type": "CALL_AD"
+          },
+          "ad_group": "customers/1234567890/adGroups/100",
+          "ad_strength": "UNSPECIFIED",
+          "policy_summary": {
+            "approval_status": "APPROVED"
+          },
+          "resource_name": "customers/1234567890/adGroupAds/100~6",
+          "status": "ENABLED"
+        },
+        "record_id": "customers/1234567890/adGroupAds/100~6",
+        "status": "ENABLED",
+        "targeting": {
+          "ad_group_bid_modifiers": [],
+          "ad_schedule": [
+            {
+              "configuration": {
+                "ad_schedule": {
+                  "day_of_week": "MONDAY",
+                  "end_hour": 18,
+                  "end_minute": "ZERO",
+                  "start_hour": 9,
+                  "start_minute": "ZERO"
+                },
+                "campaign": "customers/1234567890/campaigns/10",
+                "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                "type": "AD_SCHEDULE"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "criteria": [
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "1",
+                "keyword": {
+                  "match_type": "PHRASE",
+                  "text": "cotton shirts"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~1",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "scope": "ad_group"
+            },
+            {
+              "configuration": {
+                "ad_group": "customers/1234567890/adGroups/100",
+                "criterion_id": "2",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "free"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/adGroupCriteria/100~2",
+                "status": "ENABLED",
+                "type": "KEYWORD"
+              },
+              "scope": "ad_group"
+            },
+            {
+              "configuration": {
+                "ad_schedule": {
+                  "day_of_week": "MONDAY",
+                  "end_hour": 18,
+                  "end_minute": "ZERO",
+                  "start_hour": 9,
+                  "start_minute": "ZERO"
+                },
+                "campaign": "customers/1234567890/campaigns/10",
+                "resource_name": "customers/1234567890/campaignCriteria/10~3",
+                "type": "AD_SCHEDULE"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "bid_modifier": 1.1,
+                "campaign": "customers/1234567890/campaigns/10",
+                "device": {
+                  "type": "MOBILE"
+                },
+                "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                "type": "DEVICE"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "jobs"
+                },
+                "negative": true,
+                "resource_name": "customers/1234567890/campaignCriteria/10~4",
+                "type": "KEYWORD"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "location": {
+                  "geo_target_constant": "geoTargetConstants/2840"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                "type": "LOCATION"
+              },
+              "scope": "campaign"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "scope": "customer"
+            },
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "used"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/600~601",
+                "shared_set": "customers/1234567890/sharedSets/600"
+              },
+              "scope": "shared_set"
+            },
+            {
+              "configuration": {
+                "negative_keyword_list": {
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                "type": "NEGATIVE_KEYWORD_LIST"
+              },
+              "scope": "customer"
+            }
+          ],
+          "devices": [
+            {
+              "configuration": {
+                "bid_modifier": 1.1,
+                "campaign": "customers/1234567890/campaigns/10",
+                "device": {
+                  "type": "MOBILE"
+                },
+                "resource_name": "customers/1234567890/campaignCriteria/10~2",
+                "type": "DEVICE"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "locations": [
+            {
+              "configuration": {
+                "campaign": "customers/1234567890/campaigns/10",
+                "location": {
+                  "geo_target_constant": "geoTargetConstants/2840"
+                },
+                "negative": false,
+                "resource_name": "customers/1234567890/campaignCriteria/10~1",
+                "type": "LOCATION"
+              },
+              "scope": "campaign"
+            }
+          ],
+          "time_zone": "America/New_York"
+        },
+        "tracking": {
+          "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+          "final_url_suffix": null,
+          "resolution_enabled": false,
+          "scopes": {
+            "ad": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "ad_group": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "campaign": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "customer": {
+              "final_url_suffix": null,
+              "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+              "url_custom_parameters": null
+            }
+          },
+          "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+          "tracking_url_template": null,
+          "url_custom_parameters": null
+        },
+        "url_resolutions": []
+      },
+      "reason": "No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+      "record_id": "customers/1234567890/adGroupAds/100~6"
+    },
+    {
+      "ad_id": "4",
+      "configuration": {
+        "ad_group": {
+          "configuration": {
+            "campaign": "customers/1234567890/campaigns/40",
+            "id": "400",
+            "name": "Group 400",
+            "resource_name": "customers/1234567890/adGroups/400",
+            "status": "ENABLED"
+          },
+          "id": "400",
+          "name": "Group 400",
+          "status": "ENABLED"
+        },
+        "ad_id": "4",
+        "ad_strength": "UNSPECIFIED",
+        "ad_type": "SHOPPING_PRODUCT_AD",
+        "asset_group_id": null,
+        "campaign": {
+          "bidding": "MANUAL_CPC",
+          "bidding_strategy_resource": null,
+          "budget": "35",
+          "budget_configuration": {
+            "amount": "35",
+            "amount_micros": "35000000",
+            "explicitly_shared": false,
+            "id": "40",
+            "period": "DAILY",
+            "resource_name": "customers/1234567890/campaignBudgets/40"
+          },
+          "channel_type": "SHOPPING",
+          "configuration": {
+            "advertising_channel_type": "SHOPPING",
+            "bidding_strategy_type": "MANUAL_CPC",
+            "campaign_budget": "customers/1234567890/campaignBudgets/40",
+            "id": "40",
+            "name": "Shopping Catalog",
+            "resource_name": "customers/1234567890/campaigns/40",
+            "status": "ENABLED"
+          },
+          "currency_code": "USD",
+          "id": "40",
+          "name": "Shopping Catalog",
+          "status": "ENABLED"
+        },
+        "data_gaps": [
+          "ad_strength: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "descriptions: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "display_path: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "final_mobile_urls: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "final_urls: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "headlines: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "keywords: positive keyword targeting is not available for Shopping/product-feed ads",
+          "landing_pages: No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+          "landing_pages: product-feed access unavailable; product destinations are not stored on the ad",
+          "product_configuration: feed copy and images unavailable without feed access",
+          "tracking.final_url_suffix: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "tracking.tracking_url_template: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD",
+          "tracking.url_custom_parameters: unavailable, not set, or not applicable for SHOPPING_PRODUCT_AD"
+        ],
+        "descriptions": [],
+        "display_path": [],
+        "entity_kind": "ad",
+        "extensions": [
+          {
+            "asset": {
+              "callout_asset": {
+                "callout_text": "Free Returns"
+              },
+              "id": "502",
+              "resource_name": "customers/1234567890/assets/502",
+              "type": "CALLOUT"
+            },
+            "association": {
+              "asset": "customers/1234567890/assets/502",
+              "field_type": "CALLOUT",
+              "resource_name": "customers/1234567890/customerAssets/502~CALLOUT",
+              "status": "ENABLED"
+            },
+            "scope": "customer_asset",
+            "type": "CALLOUT"
+          }
+        ],
+        "final_mobile_urls": [],
+        "final_urls": [],
+        "headlines": [],
+        "keywords": [],
+        "negative_keywords": [
+          {
+            "configuration": {
+              "keyword": {
+                "match_type": "BROAD",
+                "text": "counterfeit"
+              },
+              "resource_name": "customers/1234567890/sharedCriteria/701~702",
+              "shared_set": "customers/1234567890/sharedSets/701"
+            },
+            "match_type": "BROAD",
+            "scope": "customer",
+            "status": null,
+            "text": "counterfeit"
+          }
+        ],
+        "policy_approval": "APPROVED",
+        "raw": {
+          "ad": {
+            "final_urls": [],
+            "id": "4",
+            "resource_name": "customers/1234567890/ads/4",
+            "shopping_product_ad": {},
+            "type": "SHOPPING_PRODUCT_AD"
+          },
+          "ad_group": "customers/1234567890/adGroups/400",
+          "ad_strength": "UNSPECIFIED",
+          "policy_summary": {
+            "approval_status": "APPROVED"
+          },
+          "resource_name": "customers/1234567890/adGroupAds/400~4",
+          "status": "ENABLED"
+        },
+        "record_id": "customers/1234567890/adGroupAds/400~4",
+        "status": "ENABLED",
+        "targeting": {
+          "ad_group_bid_modifiers": [],
+          "ad_schedule": [],
+          "criteria": [
+            {
+              "configuration": {
+                "keyword": {
+                  "match_type": "BROAD",
+                  "text": "counterfeit"
+                },
+                "resource_name": "customers/1234567890/sharedCriteria/701~702",
+                "shared_set": "customers/1234567890/sharedSets/701"
+              },
+              "scope": "customer"
+            },
+            {
+              "configuration": {
+                "negative_keyword_list": {
+                  "shared_set": "customers/1234567890/sharedSets/701"
+                },
+                "resource_name": "customers/1234567890/customerNegativeCriteria/700",
+                "type": "NEGATIVE_KEYWORD_LIST"
+              },
+              "scope": "customer"
+            }
+          ],
+          "devices": [],
+          "locations": [],
+          "time_zone": "America/New_York"
+        },
+        "tracking": {
+          "effective_tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+          "final_url_suffix": null,
+          "resolution_enabled": false,
+          "scopes": {
+            "ad": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "ad_group": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "campaign": {
+              "final_url_suffix": null,
+              "tracking_url_template": null,
+              "url_custom_parameters": null
+            },
+            "customer": {
+              "final_url_suffix": null,
+              "tracking_url_template": "https://tracker.example.net/click?url={lpurl}",
+              "url_custom_parameters": null
+            }
+          },
+          "tracker_url": "https://tracker.example.net/click?url={lpurl}",
+          "tracking_url_template": null,
+          "url_custom_parameters": null
+        },
+        "url_resolutions": []
+      },
+      "reason": "No resolvable HTTP(S) final URL; destination may be dynamic, app-only, or feed-based",
+      "record_id": "customers/1234567890/adGroupAds/400~4"
+    }
+  ],
+  "warnings": [
+    "Configured destinations only; served URLs, keyword URL overrides, asset destinations and URL expansion may differ.",
+    "MOCK DATA: not collected from a live Google Ads account."
+  ]
+}

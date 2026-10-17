@@ -1,0 +1,32 @@
+# Run from project root: docker compose --env-file .env -f deploy/compose.aws.yaml up -d --build
+services:
+  api:
+    build:
+      context: ..
+    env_file: ../.env
+    environment:
+      ADS_DATABASE: /data/ads.sqlite3
+    volumes:
+      - ads-data:/data
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+  proxy:
+    image: caddy:2.10-alpine
+    environment:
+      ADS_DOMAIN: ${ADS_DOMAIN:?Set ADS_DOMAIN to your public hostname}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  ads-data:
+  caddy-data:
+  caddy-config:
