@@ -153,6 +153,48 @@ stay in the mapper, not in your application's customer records.
    and deletion handling. On expired Google authorization, offer the connect flow
    again and save the new connection ID.
 
+### Recommended call order for an integrating service
+
+The flow has two phases. Phase 1 needs the customer present, once. Phase 2 runs in
+your background worker and needs only the `connection_id` and your server-side
+`X-API-Key`; the customer does not sign in to Google again.
+
+**Phase 1: connect (customer present, once per Google Ads connection)**
+
+| Step | Caller | Call | Result |
+|---|---|---|---|
+| 1 | Your backend | `POST /oauth/start` | `authorization_url`; store its `state` against the logged-in user and tenant |
+| 2 | Customer browser | Open `authorization_url`, sign in to Google, grant consent | Google redirects to your registered callback |
+| 3 | Your backend callback | Forward `state` + `code` to `GET /oauth/callback` | `connection_id`; save it against that tenant |
+| 4 | Your backend | `GET /connections/{id}/accounts` | Accessible accounts; show non-manager accounts in your picker |
+| 5 | Your backend | `PUT /connections/{id}/accounts` with the customer's choice | Saved selection |
+
+**Phase 2: collect (background worker, repeated)**
+
+| Step | Call | Notes |
+|---|---|---|
+| 1 | `GET /connections/{id}/accounts` (optional, e.g. daily) | Refreshes the account list. Selection never grows, and it drops accounts that are no longer accessible. |
+| 2 | `POST /connections/{id}/reports` with `{"customer_id":"..."}` | One selected account per call. Synchronous; set an HTTP timeout of at least 120 seconds. Each call is a new snapshot, so schedule it yourself. |
+| 3 | `GET /connections/{id}/reports/{report_id}` (`?format=csv` or `table`) | Re-read a saved snapshot. Store `report_id` with the account ID. |
+
+**Disconnect:** `DELETE /connections/{id}` on customer request, then delete your own
+mapping and any copied report data.
+
+**Worker error handling:**
+
+- `401`: Google access expired or was revoked, or your integration key is wrong. Stop
+  retrying, mark the connection as needing reconnect, and send the customer through
+  Phase 1 again. Save the new `connection_id`.
+- `403`: the account is not in the saved selection. Re-run discovery and selection.
+- `502`: Google rejected a read. Retry later, and alert if it persists.
+- `503`: quota or transient failure after built-in retries. Retry with backoff.
+- `404`: the connection does not exist or belongs to another key. Do not retry.
+
+Refresh tokens stay inside this service; your worker never handles Google credentials.
+While your OAuth consent screen is in **Testing**, Google can expire refresh tokens
+after about seven days, so expect `401` until the app is published and verified.
+Run one report at a time per connection; the request pacer is process-local.
+
 ### OAuth callback handoff for a customer-facing app
 
 The current callback returns JSON in the browser. It does **not** redirect to your
