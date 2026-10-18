@@ -123,7 +123,8 @@ def create_app(settings: Settings | None = None, source=None):
     @app.put("/connections/{connection_id}/accounts")
     def select_accounts(connection_id: str, selection: Selection, principal: Owner):
         data = connection(connection_id, principal)
-        available = {a["customer_id"] for a in data["accounts"] if not a["manager"] and a.get("status") not in {"CANCELED", "CLOSED", "SUSPENDED"}}
+        blocked = {"SUSPENDED"} if settings.allow_test_status else {"CANCELED", "CLOSED", "SUSPENDED"}
+        available = {a["customer_id"] for a in data["accounts"] if not a["manager"] and a.get("status") not in blocked}
         if not set(selection.customer_ids).issubset(available): raise HTTPException(403, "Discover accounts first and select accessible non-manager accounts")
         data["selected"] = selection.customer_ids
         if not store.update(connection_id, principal, data):

@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     developer_token: SecretStr = SecretStr("")
     redirect_uri: str = "http://localhost:8000/oauth/callback"
     api_version: str = "v23"
+    allow_test_status: bool = False  # Google test accounts report CANCELED/CLOSED; local testing only
     normalization_file: Path = Path("config/url-normalization.json")
     fixture_file: Path = Path("fixtures/google_ads.json")
     min_request_interval: float = Field(default=0.25, ge=0)
